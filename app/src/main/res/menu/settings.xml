@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/action_report"
+        android:title="举报"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_addBlack"
+        android:icon="@mipmap/menu_icon"
+        android:title="拉黑"
+        android:visible="false"
+        app:showAsAction="never" />
+</menu>

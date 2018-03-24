@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_10"
+    android:paddingLeft="@dimen/padding_12"
+    android:paddingTop="@dimen/padding_10">
+
+    <FrameLayout
+        android:id="@+id/view_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/user_icon"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_centerVertical="true"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImage="@color/white"
+            fresco:roundAsCircle="true"/>
+
+        <ImageView
+            android:id="@+id/iv_dot"
+            android:layout_width="@dimen/dot_status"
+            android:layout_height="@dimen/dot_status"
+            android:layout_above="@id/user_icon"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/padding_1"
+            android:layout_marginRight="@dimen/padding_1"
+            android:src="@drawable/shape_dot_green_white"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/padding_12"
+        android:layout_toRightOf="@+id/view_icon"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#454a51"
+        android:textSize="16sp"
+        tools:text="@string/seex_action_settings"/>
+
+    <RelativeLayout
+        android:id="@+id/hide_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right"
+        android:layout_marginLeft="@dimen/padding_36"
+        android:layout_marginRight="24dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical|right">
+
+        <ImageView
+            android:id="@+id/iv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/padding_12"
+            android:paddingRight="@dimen/padding_12"
+            android:src="@mipmap/icon_remarks"/>
+
+        <ImageView
+            android:id="@+id/iv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/friend_icon_margin"
+            android:layout_toRightOf="@id/iv_edit"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/friend_icon_margin_right"
+        android:src="@mipmap/combined_shape"
+        android:visibility="gone"/>
+
+</LinearLayout>

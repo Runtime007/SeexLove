@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:useLevel="false"
+    >
+
+    <!--<gradient-->
+        <!--android:startColor="@color/black_tran80"-->
+        <!--android:centerColor="@color/black_tran40"-->
+        <!--android:endColor="@color/transparent"-->
+        <!--android:angle="270" />-->
+    <gradient
+        android:startColor="@color/pro_tran90"
+        android:endColor="@color/pro_tran90"
+        android:angle="270" />
+
+
+    <!-- 边框 -->
+    <padding
+        android:bottom="0dp"
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp" />
+    <corners
+        android:topLeftRadius="3dp"
+        android:bottomLeftRadius="0dp"
+        android:topRightRadius="3dp"
+        android:bottomRightRadius="0dp"
+        />
+</shape>

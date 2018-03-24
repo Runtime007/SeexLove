@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:text="亮度"/>
+            <SeekBar
+                android:id="@+id/seekBar_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:maxHeight="5dp"
+                android:minHeight="5dp"
+                android:progress="1"
+                android:max="100"
+                android:progressDrawable="@drawable/seekbar_bg"
+                android:thumb="@mipmap/thumb" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:text="磨皮"/>
+            <SeekBar
+                android:id="@+id/seekBar_mopi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:maxHeight="5dp"
+                android:minHeight="5dp"
+                android:progress="1"
+                android:max="100"
+                android:progressDrawable="@drawable/seekbar_bg"
+                android:thumb="@mipmap/thumb" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:text="色温"/>
+            <SeekBar
+                android:id="@+id/seekBar_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:maxHeight="5dp"
+                android:minHeight="5dp"
+                android:progress="1"
+                android:max="100"
+                android:progressDrawable="@drawable/seekbar_bg"
+                android:thumb="@mipmap/thumb" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#FFFFFF">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+
+        />
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/primaryThemeColor"
+                        android:textAlignment="center"
+                        android:paddingTop="10dp"
+                        android:textSize="16dp"
+                        android:text="第一步"
+                        />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primaryForeground"
+                    android:textAlignment="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="14dp"
+                    android:text="打开微信，点击右上角“+”号，选择首付款"
+                    />
+            </LinearLayout>
+            <ImageView android:src="@drawable/first" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primaryThemeColor"
+                    android:textAlignment="center"
+                    android:paddingTop="10dp"
+                    android:textSize="16dp"
+                    android:text="第二步"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primaryForeground"
+                    android:textAlignment="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="14dp"
+                    android:text="点击底部“二维码收款”"
+                    />
+            </LinearLayout>
+            <ImageView android:src="@drawable/second" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primaryThemeColor"
+                    android:textAlignment="center"
+                    android:paddingTop="10dp"
+                    android:textSize="16dp"
+                    android:text="第三步"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primaryForeground"
+                    android:textAlignment="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="14dp"
+                    android:text="进入收款二维码页面，点击“保存收款码”"
+                    />
+            </LinearLayout>
+            <ImageView android:src="@drawable/third" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

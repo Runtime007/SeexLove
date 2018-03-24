@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_margin="5dp"
+        android:layout_height="90dp">
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:padding="@dimen/padding_2"
+            android:layout_centerInParent="true"
+            />
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:id="@+id/imagebg"
+            android:layout_centerInParent="true"
+            android:background="@drawable/seex_tran_gay"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/tagview"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancle"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/deletephoto"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:textSize="16sp"
+            android:id="@+id/checking"
+            android:text="审核中"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

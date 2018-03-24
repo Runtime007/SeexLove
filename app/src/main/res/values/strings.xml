@@ -1,0 +1,150 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">西可Love</string>
+    <string name="seex_start_app">开始西可</string>
+    <string name="seex_app_channel_id">13</string>
+
+    <string name="seex_become_seller_img_require">上传本人五官清晰的自拍照片：清晰可辨、无水印贴图。</string>
+    <string name="seex_become_seller_video_require">朗读正确的验证数字，拍摄本人五官清晰的视频，本视频不会公开，仅作认证使用
+    </string>
+    <string name="seex_share_earn_money">分享赚钱</string>
+    <string name="seex_rule">规则</string>
+
+    <string name="seex_share_money_award_unit">元</string>
+    <string name="seex_become_seller_video_identify">认证视频</string>
+    <string name="seex_become_seller_real_photo">真人头像</string>
+
+    <string name="seex_mail_friends_delete_notify">取消关注吗？</string>
+    <string name="seex_user_info_introduct_hint">请输入你的自我介绍</string>
+    <string name="seex_become_seller_web"><p class="lp">申请即表示同意<a href="#/rules"><i>«</i>西可主播协议<i>»</i></a></p></string>
+    <string name="seex_agree">同意</string>
+
+    <string name="seex_pop_profile_charge">举报</string>
+    <string name="seex_pop_profile_add_black">拉黑</string>
+    <string name="seex_report_other_hint">请尽可能详细描述您要投诉的内容，便于审核人员准确稽查</string>
+    <string name="seex_share_no_application_notify">您还没有下载应用，赶快去下载分享吧！</string>
+
+    <!--2017-9-14 瀑布流代码 start-->
+    <string name="seex_ptr_pull_to_refresh">Pull to refresh</string>
+    <string name="seex_ptr_release_to_refresh">Release to refresh</string>
+    <string name="seex_ptr_loading">Loading</string>
+    <string name="seex_ptr_last_updated">Updated: %1$s</string>
+    <!-- end 2017-9-14 瀑布流代码-->
+    <string name="seex_pick_work">选择职业</string>
+    <string name="seex_pick_hobby">我的爱好</string>
+    <string name="seex_unit_seex">米粒</string>
+    <string name="seex_exit_app">是否结束通话？</string>
+    <string name="seex_unit_prise">米粒</string>
+    <string name="seex_room_enjoy_text">TA送了你“%1$s”价值%2$s米粒</string>
+    <string name="seex_no_more_data">你已经看完了</string>
+
+    <string name="seex_folder_all">所有图片</string>
+    <string name="seex_photo_unit">张</string>
+    <string name="seex_preview">预览</string>
+    <string name="seex_tip_take_photo">拍照</string>
+    <string name="seex_msg_no_camera">手机未发现照相机</string>
+    <string name="seex_msg_amount_limit">超过图片选择数量</string>
+    <string name="seex_mis_action_done">确定</string>
+    <string name="seex_mis_action_button_string">%1$s(%2$d/%3$d)</string>
+    <string name="seex_select_images">选择图片</string>
+    <string name="seex_sava_two_onlyeemoje">请选择2张图片</string>
+    <string name="seex_sava_two_emoje">请至少选择2张图片</string>
+    <string name="seex_unit_prise_monye">米粒/分钟</string>
+    <string name="seex_unit_prise_p">米粒/张</string>
+    <string name="seex_nosex_tip">性别为必选项</string>
+    <string name="seex_nosex_tip_ok">请确认性别，确认后不可能修改</string>
+    <string name="seex_become_anchor">成为主播</string>
+    <string name="seex_nav_advance">提现</string>
+    <string name="seex_royalty">余额详情</string>
+    <string name="seex_user_info_title">个人资料</string>
+    <string name="seex_notif">通知</string>
+    <string name="seex_blacklist">黑名单</string>
+    <string name="seex_no_royalty">暂无账单</string>
+    <string name="seex_no_notif">暂无通知</string>
+    <string name="seex_no_req">暂无关注请求</string>
+    <string name="seex_no_my_req">暂无我的请求</string>
+    <string name="seex_no_roya">暂无账单</string>
+    <string name="seex_royalty_detail">账单详情</string>
+    <string name="seex_option">选择问题</string>
+    <string name="seex_no_black">暂无黑名单</string>
+    <string name="seex_name_not_null">昵称不能为空！</string>
+    <string name="seex_sex_not_null">性别不能为空！</string>
+    <string name="seex_date_not_null">出生日期不能为空！</string>
+    <string name="seex_name_not_bad">昵称中不能包含敏感字词，请重新输入！</string>
+    <string name="seex_icon_succ">上传成功！头像正在审核中....</string>
+    <string name="seex_no_file_fail">找不到图片文件</string>
+    <string name="seex_no_sreenshot">找不到截图文件</string>
+    <string name="seex_no_sdCard">找不到SD卡</string>
+    <string name="seex_card_error">银行卡格式错误</string>
+    <string name="seex_name_error">姓名格式错误</string>
+    <string name="seex_identity_error">身份证格式错误</string>
+    <string name="seex_advance_money_error">提现金额不能小于10000米粒</string>
+    <string name="seex_advance_date">每周三才可以提现！</string>
+    <string name="seex_no_data">暂无数据</string>
+    <string name="seex_no_calllog">暂无通话记录</string>
+    <string name="seex_no_chat_msg">暂无消息</string>
+    <string name="seex_no_friend">暂无关注好友</string>
+    <string name="seex_no_network">暂无网络连接</string>
+    <string name="seex_uper_ok">收款二维码上传成功</string>
+    <string name="seex_imput_iamgecode">请输入图形验证码答案</string>
+    <string name="seex_no_Camera_Permission">相机权限尚未开启，请先到“设置--应用--西可--权限”页面中开启！</string>
+    <string name="seex_no_Voice_Permission">通话录音权限尚未开启，请先到“设置--应用--西可--权限”页面中开启！</string>
+    <string name="seex_tip_Permission">相机、录音等权限尚未开启，请先到“设置--应用--西可--权限”页面中开启！</string>
+    <string name="seex_cam_Permission">相机或摄像权限尚未开启，请先到“设置--应用--西可--权限”页面中开启！</string>
+    <string name="seex_look_image">查看该私照需要%2$s米粒</string>
+    <string name="seex_look">查看</string>
+    <string name="seex_is_become_anchor">是否成为主播？</string>
+    <string name="seex_updata_psd_formarl">请输入6-16位以内的密码</string>
+    <string name="seex_msg_send">您好！我是西可Love客服，感谢您下载和使用西可Love。您如果需要认证成为主播，请加官方客服微信号：xikekefu2，添加了微信号之后，请发消息，内容格式为：“我的ID是：XXXXX”，客服将会在工作时间尽快与您取得联系，谢谢你的支持与配合。</string>
+    <string name="seex_mp4">视频文件</string>
+    <string name="seex_auth_weichat_noti">集齐10个礼物（%1$s）即可开通微信功能，开通后可在个人主页填写微信号并索取礼物，谁不想多赚钱呢，美女播主快来开通吧~</string>
+    <string name="seex_wechat">微信特权</string>
+    <string name="seex_editwechat">微信号</string>
+    <string name="seex_wechat_waring">微信出售:买家赠送你所定的礼物，即可看到你所留的微信号。切忌勿将你的微信转让给他人使用哦~</string>
+    <string name="seex_wechat_step_str">流程(务必阅读)</string>
+    <string name="seex_wechat_step_info_str">1.输入正确的微信号（只有一个微信号才能通过审核）\n2. 添加客服微信号：xikekefu2 或 kukuramday.\n(未添加客服微信,将导致审核不通过)</string>
+    <string name="seex_wechat_contion_str">请务必添加客服人员微信进行审核</string>
+    <string name="edit_title">编辑</string>
+    <string name="edit_checking">审核中</string>
+    <string name="edit_checking_fail">审核失败</string>
+    <string name="edit_selling_">售卖中</string>
+    <string name="seex_wx_sell_tip">开通出售微信特权可使用此功能</string>
+    <string name="seex_wx_open">去开通</string>
+    <string name="seex_video_vip">成为主播权益</string>
+    <string name="seex_video_info">1.可调整视频、语音通话价格以及私照价格。
+\n2.可享受平台推荐，吸引更多土豪关注。
+\n3.可享受出售微信号特权。</string>
+    <string name="seex_video_auth_case">视频认证要求</string>
+    <string name="seex_video_auth_case_info">1.视频必须是本人真实视频，确保正面、高颜值、无遮挡、五官清晰。
+\n2.拍摄时请务必说出“我的ID是%1$s”,否则将不予通过审核。
+\n3.本视频仅作为认证本人使用，官方将对其保密。
+\n4.提交审核后，将在1-2个工作日内处理。</string>
+    <string name="seex_video_add_wx_title">添加官方微信</string>
+    <string name="seex_video_wx_tip">请务必添加审核人员微信进行人工审核</string>
+    <string name="seex_wx_nmb">xikekefu2</string>
+    <string name="seex_onclick_copy">点击复制</string>
+    <string name="seex_start_video">开始视频认证</string>
+    <string name="seex_video_take_care">拍摄时请务必说出“我的ID是%1$s”
+否则将不予通过审核</string>
+    <string name="seex_video_take_care_info">请务必添加审核人员微信进行人工审核
+并发送信息“我的ID是%1$s”</string>
+    <string name="seex_onclick_put_check">提交审核</string>
+    <string name="seex_buy_wx_dialog_tip">查看主播微信号，需要赠送%1$s，确认赠送。</string>
+    <string name="seex_buy">赠送</string>
+    <string name="change_video">替换视频秀</string>
+    <string name="seex_mp4_preleas">视频预览</string>
+
+    <string-array name="start_list">
+        <item>白羊座</item>
+        <item>金牛座</item>
+        <item>双子座</item>
+        <item>巨蟹座</item>
+        <item>狮子座</item>
+        <item>处女座</item>
+        <item>天秤座</item>
+        <item>天蝎座</item>
+        <item>射手座</item>
+        <item>摩羯座</item>
+        <item>水瓶座</item>
+        <item>双鱼座</item>
+    </string-array>
+</resources>

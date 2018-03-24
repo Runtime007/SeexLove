@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F2F2F2">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/bottom_bg"
+        android:id="@+id/toolbarview"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Table_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/seex_apply_withdraw" />
+
+        <LinearLayout
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|right"
+            android:clickable="true"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/pro_back" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/but_record"
+            style="@style/report_black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|right"
+            android:background="@null"
+            android:text="我的收益" />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/addPart"
+        android:background="@drawable/btn_pay_add"
+        android:layout_below="@id/toolbarview"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:paddingTop="38dp"
+            android:paddingBottom="38dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:gravity="center" android:layout_gravity="center"   >
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp" android:src="@drawable/add_card" />
+            <TextView
+
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryThemeColor"
+                android:textSize="14sp"
+                android:text="添加提现方式"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/pays"
+        android:layout_below="@id/addPart"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:dividerHeight="0dp"
+
+        android:divider="#F2F2F2"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </ListView>
+
+
+
+
+</RelativeLayout>

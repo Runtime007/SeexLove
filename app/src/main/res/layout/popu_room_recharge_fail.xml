@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/popu_menu_bg"
+    android:clickable="true"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/icon_recharge_failure"
+            android:drawablePadding="@dimen/padding_10"
+            android:text="充值失败！"
+            android:textColor="#ff9a00"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:layout_marginBottom="@dimen/padding_32"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#acacac"
+                android:gravity="bottom"
+                android:textSize="14sp"
+                android:text="充值金额"/>
+
+            <TextView
+                android:id="@+id/tv_recharge_fail_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_marginLeft="4dp"
+                android:drawableLeft="@mipmap/icon_money"
+                android:drawablePadding="4dp"
+                android:text=""
+                />
+
+            <TextView
+                style="@style/text_white14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="元"/>
+            </LinearLayout>
+        <TextView
+            android:id="@+id/btn_recharge_re"
+            style="@style/text_white16"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/theme_title_color_0"
+            android:gravity="center"
+            android:text="重新充值" />
+    </LinearLayout>
+</RelativeLayout>

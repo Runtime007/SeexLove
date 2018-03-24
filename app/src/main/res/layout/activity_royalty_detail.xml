@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/light_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/order_ID"
+            style="@style/text_more16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单号：4844564" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/user_icon"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/padding_22"
+                fresco:actualImageScaleType="centerCrop"
+                fresco:placeholderImage="@color/white"
+                fresco:roundAsCircle="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_toRightOf="@+id/user_icon"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    style="@style/text_more14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxEms="6"
+                    android:singleLine="true"
+                    android:text="呵呵" />
+
+                <TextView
+                    android:id="@+id/user_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_3"
+                    android:textColor="@color/tab_nor"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tx_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/padding_30"
+                android:text="0.0"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/light_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/padding_10"
+        android:paddingBottom="@dimen/padding_10"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tx_info"
+            style="@style/profile_text12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+        <TextView
+            android:id="@+id/tx_type"
+            style="@style/profile_text12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_5"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tx_status"
+            style="@style/profile_text12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_5"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/create_time"
+            style="@style/profile_text12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_5"
+            android:text="" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tx_feed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_22"
+        android:padding="@dimen/padding_5"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#0CB8DF"
+        android:visibility="gone"
+        android:text="对本次订单有疑问"/>
+</LinearLayout>

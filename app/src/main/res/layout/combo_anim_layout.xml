@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/combo_anim_gift_item_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="70dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/combo_anim_bg_0"
+            android:orientation="horizontal"
+        >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+        >
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/combo_anim_gift_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="bottom"
+                fresco:actualImageScaleType="centerInside"
+                fresco:placeholderImage="@drawable/gift_prop_0"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="bottom|center_horizontal"
+                    android:orientation="vertical"
+                >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/combo_anim_gift_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textColor="#ffff45"
+                            android:textSize="12sp"
+                            tools:text="盖乐世豪华炸机..."
+                            />
+                        <TextView
+                            android:id="@+id/combo_anim_gift_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/seex_chat_combo_text"
+                            android:textColor="#ffffff"
+                            android:textSize="12sp"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/combo_anim_gift_num_view"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/combo_anim_gift_x"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:paddingBottom="5dp"
+            android:text="x"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+        />
+        <TextView
+            android:id="@+id/combo_anim_gift_num"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="bottom|left"
+            android:text="1"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

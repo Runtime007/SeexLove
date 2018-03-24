@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:visibility="visible">
+
+
+    <LinearLayout
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/padding_12"
+        android:alpha="0.9"
+        android:background="@drawable/popu_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_charge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                style="@style/text_white14"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/seex_pop_profile_charge"
+                android:textColor="@drawable/pop_menu_text"/>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1px"
+                  android:layout_marginLeft="@dimen/padding_5"
+                  android:layout_marginRight="@dimen/padding_5"
+                  android:background="@color/white_tran30"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/add_black"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingRight="@dimen/padding_15">
+            <TextView
+                style="@style/text_white14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="拉黑"
+                android:textColor="@drawable/pop_menu_text"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

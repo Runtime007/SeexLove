@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/chat_icon_user"
+        android:orderInCategory="100"
+        android:title="查看资料"
+        android:icon="@mipmap/chat_icon_user_details"
+        app:showAsAction="ifRoom" />
+</menu>

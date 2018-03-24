@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/padding_10"
+    android:paddingLeft="@dimen/padding_12"
+    android:paddingRight="@dimen/padding_12"
+    android:paddingTop="@dimen/padding_10">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_photo"
+        android:layout_width="@dimen/friend_avator_size"
+        android:layout_height="@dimen/friend_avator_size"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        app:actualImageScaleType="centerCrop"
+        app:placeholderImage="@color/white"
+        app:roundAsCircle="true"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_12"
+        android:layout_toRightOf="@id/sdv_photo"
+        android:textColor="@color/friend_edt_text"
+        android:textSize="@dimen/friend_text"
+        tools:text="@string/seex_action_settings"/>
+
+    <TextView
+        android:id="@+id/tv_describle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginLeft="@dimen/padding_12"
+        android:layout_toRightOf="@id/sdv_photo"
+        android:textColor="@color/gray_id"
+        android:textSize="@dimen/friend_describle_text"
+        tools:text="@string/seex_action_settings"/>
+
+</RelativeLayout>

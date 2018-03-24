@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="65dp">
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/left"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/padding_5"
+        android:layout_marginLeft="@dimen/padding_5"
+        >
+        <com.facebook.drawee.view.SimpleDraweeView
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImage="@color/white"
+            fresco:roundAsCircle="true"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/user_icon"
+            android:src="@drawable/seex_call_hangup"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/text_white14"
+                android:text=""
+                android:id="@+id/nicnname"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/text_white14"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:id="@+id/showid"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="@dimen/padding_5"
+        android:id="@+id/btn_hangup"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/seex_call_hangup"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_enjoy"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/btn_hangup"
+        android:layout_toRightOf="@+id/left"
+        android:scrollbars="none" />
+
+</RelativeLayout>

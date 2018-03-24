@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:id="@+id/ptr_classic_header_rotate_view_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/ptr_classic_header_rotate_view_header_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/ptr_classic_header_rotate_view_header_last_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="#999999"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/ptr_classic_header_rotate_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:src="@mipmap/refresh_arrow" />
+
+            <ImageView
+                android:id="@+id/cus_loading_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/avi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                app:indicatorColor="@color/theme_title_color_0"
+                app:indicatorName="BallPulseIndicator" />
+
+            <ProgressBar
+                android:id="@+id/ptr_classic_header_rotate_view_progressbar"
+                style="?android:attr/progressBarStyleSmallInverse"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

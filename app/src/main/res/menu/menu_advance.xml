@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+    <item
+        android:id="@+id/change_card"
+        android:orderInCategory="100"
+        android:title="换卡"
+        android:textSize="15sp"
+        app:showAsAction="ifRoom" />
+</menu>

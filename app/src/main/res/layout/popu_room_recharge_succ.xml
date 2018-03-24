@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/popu_menu_bg"
+    android:visibility="gone"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/icon_recharge_success"
+            android:drawablePadding="@dimen/padding_10"
+            android:text="充值成功！"
+            android:textColor="#90DA44"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_15"
+            android:layout_marginLeft="@dimen/padding_20"
+            android:layout_marginRight="@dimen/padding_20"
+            android:layout_marginBottom="26dp"
+            android:background="@drawable/room_item_pre"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginTop="14dp"
+                android:drawablePadding="4dp"
+                android:drawableRight="@mipmap/icon_money"
+                android:text="充值金额"/>
+
+            <TextView
+                android:id="@+id/tv_recharge_succ_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="#ffffff"
+                android:textSize="50sp"
+                android:text="200"
+                />
+            </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

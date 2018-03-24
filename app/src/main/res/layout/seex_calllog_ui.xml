@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/app_bg_color"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_ti"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/bottom_bg"
+            android:elevation="0dp"
+            android:gravity="center_vertical"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/toolbar_back_black">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_white15"
+                    android:text="视频"
+                    android:textColor="@color/qing_green"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/tab_1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_white15"
+                    android:layout_marginLeft="20dp"
+                    android:text="语音"
+                    android:textColor="@color/white"
+                    android:id="@+id/tab_2"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/title"
+                style="@style/ToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+        </android.support.v7.widget.Toolbar>
+
+        <include
+            layout="@layout/line_toolbar"/>
+    </LinearLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/message_fragment_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+    </RelativeLayout>
+</LinearLayout>

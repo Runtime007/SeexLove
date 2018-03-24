@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_actions_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="@dimen/padding_12"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/room_menu_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <!--打赏-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/room_reward"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawablePadding="@dimen/padding_10"
+                    android:drawableTop="@mipmap/room_reward"
+                    android:text="打赏"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <!--关闭麦克风-->
+            <Button
+                android:id="@+id/avchat_video_mute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="@dimen/padding_10"
+                android:drawableTop="@drawable/btn_open_mic"
+                android:text="关闭麦克风"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+            <!--加好友-->
+            <Button
+                android:id="@+id/room_add_friends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="@dimen/padding_10"
+                android:drawableTop="@mipmap/room_add_friends"
+                android:text="加好友"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <!--充值-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/room_btn_recharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawablePadding="@dimen/padding_10"
+                    android:drawableTop="@mipmap/room_btn_recharge"
+                    android:text="充值"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <!--切换摄像头-->
+            <Button
+                android:id="@+id/avchat_switch_camera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="@dimen/padding_10"
+                android:drawableTop="@mipmap/icon_camera"
+                android:text="切换摄像头"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+            <!--举报-->
+            <Button
+                android:id="@+id/room_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="@dimen/padding_10"
+                android:drawableTop="@mipmap/icon_report"
+                android:text="举报"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <!--挂断-->
+        <Button
+            android:id="@+id/avchat_video_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="@dimen/padding_10"
+            android:drawableTop="@mipmap/cancle_call"
+            android:text="挂断"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+        <!--收纳-->
+        <Button
+            android:id="@+id/room_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="@dimen/padding_10"
+            android:visibility="gone"
+            android:drawableTop="@drawable/btn_room_menu"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

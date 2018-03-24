@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/black_tran70"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/padding_10"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:layout_height="400dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+           android:layout_margin="@dimen/padding_10"
+            android:background="@color/app_bg_color"
+            android:layout_height="match_parent">
+
+
+
+            <Gallery
+                android:layout_width="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_height="match_parent"
+                android:id="@+id/gallery"
+                >
+            </Gallery>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/left"
+                android:id="@+id/left"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/right"
+                android:id="@+id/right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/green_close"
+            android:layout_alignParentRight="true"
+            android:id="@+id/cancle_dilaog"></ImageView>
+    </RelativeLayout>
+
+</RelativeLayout>

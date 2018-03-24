@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:layout_alignParentBottom="true"
+    android:visibility="gone">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_enjoy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popu_menu_bg"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/btn_enjoy"
+        android:layout_below="@+id/recyclerView_enjoy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_room_enjoy"
+        android:gravity="center">
+
+        <TextView
+            style="@style/text_white16"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/btn_gift_left"
+            android:drawablePadding="@dimen/padding_7"
+            android:gravity="center"
+            android:text="送给TA" />
+    </LinearLayout>
+</RelativeLayout>

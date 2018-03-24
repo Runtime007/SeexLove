@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/poptag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/hide_input"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </View>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chat_list_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/userButtomView"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:layout_marginRight="@dimen/padding_10"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@+id/userButtomView"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:layout_marginRight="@dimen/padding_10">
+
+        <LinearLayout
+            android:id="@+id/msg_View"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"></LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/userButtomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/inputView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="7dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/chat_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/seex_incall_chat_bg"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint=""
+                    android:minHeight="40dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btn_emoj"
+                    android:layout_width="35dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/btn_emoj" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/padding_10">
+
+                    <TextView
+                        android:id="@+id/chat_send_btn"
+                        style="@style/text_white14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/seex_tran_gay"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/padding_5"
+                        android:paddingLeft="@dimen/padding_10"
+                        android:paddingRight="@dimen/padding_10"
+                        android:paddingTop="@dimen/padding_5"
+                        android:text="发送" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/toolview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginRight="@dimen/padding_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/viewtag1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/mic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_1"
+                        android:src="@drawable/btn_voice_mic" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:id="@+id/mic_txt"
+                        android:layout_marginTop="10dp"
+                        android:text="静音"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_1"
+                        android:id="@+id/handsfree"
+                        android:src="@drawable/btn_handsfree" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="免提"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/flow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_1"
+
+                        android:src="@mipmap/flow_add_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:id="@+id/flowText"
+                        android:layout_marginTop="10dp"
+                        android:text="关注"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/giftview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_1"
+
+                        android:src="@mipmap/voice_gift" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="礼物"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/input_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="@dimen/padding_1"
+                        android:src="@mipmap/voice_news"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="消息"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/ll_facechoose"
+            android:layout_width="fill_parent"
+            android:layout_height="164dp"
+            android:background="#50f6f5f5"
+            android:visibility="gone">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/emoje_contains"
+                android:layout_width="match_parent"
+                android:layout_height="164dp"></android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:id="@+id/iv_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="6dip"
+                android:gravity="center"
+                android:orientation="horizontal"></LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/smallgifttag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="180dp"
+        android:layout_marginRight="@dimen/padding_20"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/icon"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:background="@mipmap/heart_fast_gift" />
+
+        <TextView
+            android:id="@+id/money"
+            style="@style/text_white14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/seex_incall_chat_bg"
+            android:drawableRight="@mipmap/rice"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="¥0.3" />
+    </LinearLayout>
+</RelativeLayout>

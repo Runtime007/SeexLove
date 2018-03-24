@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    app:srlPrimaryColor="@color/qing_green"
+    app:srlAccentColor="@color/red_tip"
+    android:clipToPadding="true"
+    app:srlEnablePreviewInEditMode="false">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/CoordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBar_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapse_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentScrim="@color/transparent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        app:layout_collapseMode="parallax"
+                        app:layout_collapseParallaxMultiplier="0.0"
+                        android:orientation="vertical">
+                      <com.chat.seecolove.widget.ImageCycleView
+                                android:id="@+id/banner_cycleView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/beauty_circle_bg"
+                            android:padding="8dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="5dp"
+                            android:id="@+id/finduser"
+                            android:visibility="gone"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/home_search"/>
+                    </RelativeLayout>
+
+
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:orientation="vertical">
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout_home"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_gravity="bottom"
+                app:tabIndicatorColor="@color/qing_green"
+                app:tabIndicatorHeight="3dp"
+                app:tabMode="fixed"
+                android:visibility="gone"
+                app:tabSelectedTextColor="#595959"
+                android:paddingBottom="@dimen/padding_5"
+                app:tabTextAppearance="@style/Home_TabLayout" />
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:overScrollMode="never"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/pullLoadMoreRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:overScrollMode="never" />
+
+
+        <TextView
+            android:id="@+id/no_data"
+            style="@style/setting_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="250dp"
+            android:drawablePadding="@dimen/padding_3"
+            android:drawableTop="@mipmap/no_data"
+            android:gravity="center"
+            android:text="@string/seex_no_data"
+            android:visibility="gone" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

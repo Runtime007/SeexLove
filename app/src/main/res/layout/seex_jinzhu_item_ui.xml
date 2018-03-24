@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_bg"
+    android:id="@+id/rootview"
+    android:padding="@dimen/padding_10">
+
+
+    <RelativeLayout
+        android:layout_width="45dp"
+        android:id="@+id/report_layout"
+        android:layout_centerVertical="true"
+        android:layout_height="45dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:id="@+id/num"/>
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_centerInParent="true"
+             android:id="@+id/imagevip"
+             android:layout_height="wrap_content"
+             android:src="@mipmap/about"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:id="@+id/user_layout"
+        android:layout_toRightOf="@+id/report_layout"
+        android:layout_centerVertical="true">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/user_icon"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+
+        fresco:actualImageScaleType="centerCrop"
+        fresco:placeholderImage="@color/white"
+        fresco:roundAsCircle="true"
+        fresco:roundedCornerRadius="5dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/view_sex"
+            android:src="@mipmap/home_boy"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:layout_toRightOf="@+id/user_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/username"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="@string/action_ok"
+            android:layout_marginTop="@dimen/padding_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/ID"
+                style="@style/edit_text12"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/hubby"
+                style="@style/edit_text12"
+                android:layout_marginLeft="@dimen/padding_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btn_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/btn_video"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/padding_10"
+        android:visibility="gone"
+        android:src="@mipmap/home_talk" />
+    <ImageView
+        android:id="@+id/btn_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/padding_10"
+        android:src="@mipmap/home_telephone" />
+</RelativeLayout>

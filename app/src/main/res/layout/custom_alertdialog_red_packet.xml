@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    >
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        ><ImageView
+        android:layout_marginLeft="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/hongbao" /></LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_get"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_height="wrap_content" android:textColor="#FFC645"
+            android:textSize="26dp"
+            android:text="188"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textColor="#FFC645"
+            android:textSize="10dp"
+            android:text="米粒  "
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/btn_get"
+        android:layout_marginTop="146dp"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dialog_rb"
+        android:textSize="12dp"
+        android:layout_marginRight="200dp"
+        android:paddingTop="10dp"
+        android:textAlignment="center"
+        android:textColor="#3D3B3C"
+        android:paddingBottom="10dp"
+        android:text="确   定"/>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="@dimen/padding_10"-->
+        <!--android:padding="@dimen/padding_20"-->
+        <!--android:orientation="vertical"-->
+       <!--&gt;-->
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_get"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--style="@style/edit_text14"-->
+            <!--android:layout_above="@+id/btn_Get"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="@dimen/padding_27"-->
+            <!--android:layout_marginBottom="@dimen/padding_20"/>-->
+        <!--<Button-->
+            <!--android:id="@+id/btn_get"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/white"-->
+         <!--android:layout_gravity="bottom|center_horizontal"-->
+            <!--android:text="确定"-->
+            <!--android:background="@drawable/btn_yellow_bg"/>-->
+    <!--</LinearLayout>-->
+    <!--<ImageView-->
+        <!--android:id="@+id/btn_close"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@mipmap/black_close" />-->
+</RelativeLayout>

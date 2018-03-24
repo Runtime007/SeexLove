@@ -1,0 +1,11 @@
+<com.chat.seecolove.widget.SlidingMenu
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:id="@+id/slidingmenu"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true"
+        >
+
+</com.chat.seecolove.widget.SlidingMenu>
+
+

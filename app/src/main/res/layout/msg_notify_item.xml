@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp">
+
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/chat_user_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                fresco:actualImageScaleType="centerCrop"
+                fresco:placeholderImage="@color/white"
+                fresco:roundAsCircle="true"
+                fresco:roundedCornerRadius="25dp"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/chat_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="好友昵称"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/chat_user_guanfang"
+                        style="@style/text_white12"
+                        android:layout_width="34dp"
+                        android:layout_height="18dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/padding_15"
+                        android:layout_toRightOf="@id/username"
+                        android:background="@drawable/shape_red_solid"
+                        android:gravity="center"
+                        android:text="@string/seex_friends_official"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/chat_user_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="2016-02-25 10:58"
+                    android:textColor="@color/menu_gray"
+                    android:textSize="10sp"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/chat_user_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="跟多用省略号代替....."
+                    android:textColor="@color/menu_gray"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/chat_user_num"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/shape_circle_red"
+                    android:gravity="center"
+                    android:text="99"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/first_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider"
+        android:background="@color/line_tran40"
+    />
+    <View
+        android:id="@+id/chat_user_header_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/light_bg"/>
+</LinearLayout>

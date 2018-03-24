@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+    <item
+        android:id="@+id/btn_share"
+        android:orderInCategory="100"
+        android:title="分享"
+        android:icon="@mipmap/icon_share"
+        app:showAsAction="ifRoom" />
+</menu>

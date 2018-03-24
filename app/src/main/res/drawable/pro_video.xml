@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:useLevel="false"
+    >
+
+    <!-- 填充 -->
+    <solid android:color="#90DA44" />
+
+    <!-- 边框 -->
+    <padding
+        android:bottom="0dp"
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp" />
+    <corners
+        android:topLeftRadius="4dp"
+        android:bottomLeftRadius="4dp"
+        android:topRightRadius="4dp"
+        android:bottomRightRadius="4dp"
+        />
+</shape>
+
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+    <!--<item android:state_focused="true">-->
+        <!--<layer-list>-->
+            <!--<item-->
+                <!--android:left="4.0dip"-->
+                <!--android:top="4.0dip">-->
+                <!--<shape>-->
+                    <!--<solid android:color="#90DA44"/>-->
+                    <!--<corners android:radius="5.0dip"/>-->
+                <!--</shape>-->
+            <!--</item>-->
+        <!--</layer-list>-->
+    <!--</item>-->
+    <!--<item-->
+        <!--android:state_pressed="true">-->
+        <!--<layer-list>-->
+            <!--<item-->
+                <!--android:left="4.0dip"-->
+                <!--android:top="4.0dip">-->
+                <!--<shape>-->
+                    <!--<solid android:color="#90DA44"/>-->
+                    <!--<corners android:radius="5.0dip"/>-->
+                <!--</shape>-->
+            <!--</item>-->
+        <!--</layer-list>-->
+    <!--</item>-->
+    <!--<item>-->
+        <!--<layer-list>-->
+            <!--<item android:right="4dip" android:bottom="4.0dip">-->
+                <!--<shape>-->
+                    <!--<solid android:color="#66000000"/>-->
+                    <!--<corners android:radius="5.0dip"/>-->
+                <!--</shape>-->
+            <!--</item>-->
+            <!--<item android:top="4.0dip" android:left="4.0dip">-->
+                <!--<shape>-->
+                    <!--<solid android:color="#90DA44"/>-->
+                    <!--<corners android:radius="5.0dip"/>-->
+                <!--</shape>-->
+            <!--</item>-->
+        <!--</layer-list>-->
+    <!--</item>-->
+<!--</selector>-->
+

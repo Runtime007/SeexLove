@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_above="@+id/tagview"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:id="@+id/report2"
+            android:textSize="16sp"
+            android:textColor="@color/back_text"
+            android:text="关注"/>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E5E5E5"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/report3"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/back_text"
+            android:text="拉黑"/>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E5E5E5"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:id="@+id/report1"
+            android:textSize="16sp"
+            android:textColor="@color/back_text"
+            android:text="举报"/>
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#E5E5E5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:id="@+id/cancle"
+            android:textSize="16sp"
+            android:textColor="@color/back_text"
+            android:text="取消"/>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E5E5E5"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:id="@+id/tagview"
+        android:layout_alignParentBottom="true"
+        android:text=""/>
+</RelativeLayout>

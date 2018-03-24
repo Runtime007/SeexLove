@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/status_bar_fix"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/bottom_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/bottom_bg"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Table_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/seex_friend" />
+
+            <LinearLayout
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical|right"
+                android:clickable="true"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_add_friends" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/but_calllog"
+                style="@style/report_black_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical|right"
+                android:background="@null"
+                android:text="@string/seex_call_log" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/line_toolbar" />
+
+        <RelativeLayout
+            android:id="@+id/view_tip"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/list_name"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding_5"
+                android:layout_marginRight="@dimen/padding_10"
+                android:src="@mipmap/face" />
+
+
+            <ImageView
+                android:id="@+id/close_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/padding_10"
+                android:clickable="true"
+                android:src="@mipmap/close_tip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/refreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/app_bg_color"
+                app:srlPrimaryColor="@color/white"
+                app:srlAccentColor="@color/qing_green"
+                android:clipToPadding="true"
+                app:srlEnablePreviewInEditMode="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <include layout="@layout/item_friends_header"></include>
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+<!--
+            <TextView
+                android:id="@+id/tvSideBarHint"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_side_bar_bg"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="48sp"
+                android:visibility="gone"
+                tools:text="A"
+                tools:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginBottom="@dimen/padding_10"
+                android:layout_marginTop="@dimen/padding_10">
+
+                <com.chat.seecolove.widget.recycleview.IndexBar.widget.IndexBar
+                    android:id="@+id/indexBar"
+                    android:layout_width="@dimen/padding_20"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/padding_1"
+                    android:paddingBottom="@dimen/padding_6"
+                    android:paddingTop="@dimen/padding_6"
+                    android:visibility="gone"
+                    app:indexBarTextSize="10sp" />
+            </LinearLayout>
+-->
+            <TextView
+                android:id="@+id/no_data"
+                style="@style/setting_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:drawablePadding="@dimen/padding_3"
+                android:drawableTop="@mipmap/no_data"
+                android:gravity="center"
+                android:text="@string/seex_no_friend"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

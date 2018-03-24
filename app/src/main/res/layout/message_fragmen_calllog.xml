@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_bg_color"
+        app:srlPrimaryColor="@color/white"
+        app:srlAccentColor="@color/qing_green"
+        android:clipToPadding="true"
+        app:srlEnablePreviewInEditMode="false">
+        <!--
+          <com.scwang.smartrefresh.layout.header.ClassicsHeader
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+              <ImageView
+                  android:layout_width="50dp"
+                  android:layout_height="50dp"
+                  android:id="@+id/loading_img"
+                  android:src="@drawable/load_anim"
+                  />
+              <TextView
+                  style="@style/text_white14"
+                  android:id="@+id/id_tv_loadingmsg"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="请稍等...精彩为你呈现"
+                  />
+              </LinearLayout>
+
+          </com.scwang.smartrefresh.layout.header.ClassicsHeader>
+     -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        <TextView
+            android:id="@+id/no_data"
+            style="@style/setting_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:drawablePadding="@dimen/padding_3"
+            android:drawableTop="@mipmap/no_data"
+            android:text="@string/seex_no_calllog"
+            android:visibility="gone" />
+
+</RelativeLayout>

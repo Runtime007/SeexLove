@@ -1,0 +1,537 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/app_bg_color"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/padding_56"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="140dp"
+                        android:layout_height="160dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/user_head"
+                        android:layout_width="140dp"
+                        android:layout_height="160dp"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        fresco:actualImageScaleType="centerCrop"
+                        fresco:placeholderImage="@mipmap/no_data"
+                        fresco:roundedCornerRadius="5dp"
+                        fresco:roundAsCircle="false" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="@string/seex_change_userhead"
+                            android:gravity="center"
+                            android:id="@+id/avtarText"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/image_gay_bg"
+                            style="@style/text_white16"/>
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_10"
+                        android:text="我的封面"
+                        android:gravity="center"
+                        android:layout_below="@+id/user_head"
+                        android:background="@color/white"
+                        style="@style/info_more16"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:id="@+id/videoLayout"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="140dp"
+                        android:layout_height="160dp">
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/video_head"
+                            android:layout_width="140dp"
+                            android:layout_height="160dp"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            fresco:actualImageScaleType="centerCrop"
+                            fresco:placeholderImage="@mipmap/no_data"
+                            fresco:roundedCornerRadius="5dp"
+                            fresco:roundAsCircle="false" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="上传视频秀"
+                            android:gravity="center"
+                            android:id="@+id/videoText"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/image_gay_bg"
+                            style="@style/text_white16"/>/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_10"
+                        android:layout_below="@+id/video_head"
+                        android:text="上传视频秀"
+                        android:gravity="center"
+                        android:background="@color/white"
+                        style="@style/info_more16"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_10"
+                    android:text="我的相册"
+                    style="@style/info_more16"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    style="@style/info_more14"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/imageText"/>
+            </LinearLayout>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/padding_10"
+                android:scrollbars="none"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+                <com.chat.seecolove.widget.SeexGridView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:id="@+id/iamgeViews">
+                </com.chat.seecolove.widget.SeexGridView>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/srcet_layout"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_10"
+                        android:text="我的私照（赚钱）"
+                        style="@style/info_more16"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        style="@style/info_more14"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/privateimageText"/>
+                </LinearLayout>
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:scrollbars="none"
+                    android:background="@color/white"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                <com.chat.seecolove.widget.SeexGridView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:id="@+id/srcetiamgeViews"
+                    android:numColumns="3">
+
+                </com.chat.seecolove.widget.SeexGridView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/view_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/white"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    style="@style/info_more16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding_10"
+                    android:text="昵称" />
+
+                <TextView
+                    android:id="@+id/nick_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding_10"
+                    android:drawablePadding="@dimen/padding_5"
+                    android:drawableRight="@mipmap/mine_arrow" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/info_more16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
+                android:id="@+id/intro"
+                android:layout_marginBottom="@dimen/padding_10"
+                android:padding="@dimen/padding_10"
+                android:background="@color/white"
+                android:text="个性签名" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:visibility="gone"
+                android:id="@+id/wechatView"
+                android:layout_marginBottom="@dimen/padding_10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    style="@style/info_more16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding_10"
+                    android:text="出售微信" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding_5"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/wechatwork"
+                    android:layout_marginRight="20dp"
+                    android:text="编辑"
+                    android:background="@drawable/seex_green_box" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:id="@+id/workView"
+                android:layout_marginBottom="@dimen/padding_10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    style="@style/info_more16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding_10"
+                    android:text="职业" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding_10"
+                    android:id="@+id/work"
+                    android:drawablePadding="@dimen/padding_5"
+                    android:drawableRight="@mipmap/mine_arrow" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:id="@+id/moreView_contorl"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    style="@style/info_more16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding_10"
+                    android:text="高级" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding_10"
+                    android:drawablePadding="@dimen/padding_5"
+                    android:id="@+id/moreImageView"
+                    android:drawableRight="@mipmap/mine_down" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/moreView"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <include layout="@layout/line_hor_mar_left" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        style="@style/info_more16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/padding_10"
+                        android:text="性别" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/padding_10"
+                        android:id="@+id/sex"
+                        android:drawablePadding="@dimen/padding_5" />
+                </RelativeLayout>
+                <include layout="@layout/line_hor_mar_left" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        style="@style/info_more16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/padding_10"
+                        android:text="年龄" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/padding_10"
+                        android:id="@+id/useAge"
+                        android:drawablePadding="@dimen/padding_5" />
+                </RelativeLayout>
+                <include layout="@layout/line_hor_mar_left" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:id="@+id/cityview"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        style="@style/info_more16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/padding_10"
+                        android:text="所在地" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/padding_10"
+                        android:drawablePadding="@dimen/padding_5"
+                        android:id="@+id/city" />
+                </RelativeLayout>
+                <include layout="@layout/line_hor_mar_left" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="0.5dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:visibility="gone"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        style="@style/info_more16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/padding_10"
+                        android:text="情感状态" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/padding_10"
+                        android:drawablePadding="@dimen/padding_5"
+                        android:id="@+id/lovestype"
+                        android:drawableRight="@mipmap/mine_arrow" />
+                </RelativeLayout>
+                <include layout="@layout/line_hor_mar_left" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/white"
+                    android:id="@+id/hobbyView"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        style="@style/info_more16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/padding_10"
+                        android:text="我的爱好" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/padding_10"
+                        android:id="@+id/hobby"
+                        android:drawablePadding="@dimen/padding_5"
+                        android:drawableRight="@mipmap/mine_arrow" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_50"></View>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+    <com.chat.seecolove.widget.BigImageViewPageAlbum
+        android:id="@+id/bigImageViewPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:clickable="true"
+        android:visibility="gone" />
+</RelativeLayout>

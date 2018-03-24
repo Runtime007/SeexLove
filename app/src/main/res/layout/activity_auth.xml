@@ -1,0 +1,260 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_bg"
+    android:fitsSystemWindows="true"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_20" />
+
+            <TextView
+                style="@style/text_bold_black15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_10"
+                android:gravity="center"
+                android:text="终于等到宇宙最cool的你啦~\n完成播主认证，就可以躺着赚钱咯！" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/first"
+                    android:layout_marginLeft="@dimen/padding_5"
+                    android:layout_marginRight="@dimen/padding_5"
+                    android:layout_marginTop="-10dp"
+                    android:background="@drawable/btn_bg_home"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_10">
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="@dimen/padding_7"-->
+                    <!--android:src="@mipmap/auth_upload" />-->
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/user_icon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/padding_7"
+                        fresco:actualImageScaleType="centerCrop"
+                        fresco:placeholderImage="@mipmap/auth_upload"
+                        fresco:roundAsCircle="false"
+                        fresco:roundedCornerRadius="5dp" />
+
+                    <TextView
+                        style="@style/text_black10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_7"
+                        android:text="头像与视频必须是同一人，且要有清晰的面部展示！" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/auth_first" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/second"
+                    android:layout_marginLeft="@dimen/padding_5"
+                    android:layout_marginRight="@dimen/padding_5"
+                    android:layout_marginTop="-10dp"
+                    android:background="@drawable/btn_bg_home"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_10">
+
+                    <FrameLayout
+                        android:layout_width="200dp"
+                        android:layout_height="105dp"
+                        android:layout_marginTop="@dimen/padding_7"
+                        android:background="@color/black"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/btn_rec"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/auth_video" />
+
+                        <ImageView
+                            android:id="@+id/btn_play"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|left"
+                            android:layout_marginLeft="@dimen/padding_20"
+                            android:visibility="gone"
+                            android:src="@mipmap/auth_start" />
+
+                        <ImageView
+                            android:id="@+id/btn_replace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_marginRight="@dimen/padding_20"
+                            android:visibility="gone"
+                            android:src="@mipmap/auth_re" />
+                    </FrameLayout>
+
+                    <TextView
+                        style="@style/text_black10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_7"
+                        android:text="本视频不公开，仅作为认证本人使用，请放心大胆的录。" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/auth_second" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tips"
+                style="@style/text_black12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/padding_10"
+                android:gravity="center"
+               android:text="温馨提示：如果想成为金牌播主，需要添加审核人员QQ 3353298104" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/padding_20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/second3"
+                    android:layout_marginLeft="@dimen/padding_5"
+                    android:layout_marginRight="@dimen/padding_5"
+                    android:layout_marginTop="-10dp"
+                    android:background="@drawable/btn_bg_home"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_10">
+                    <TextView
+                        style="@style/text_black10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_10"
+                        android:text="成为播主需添加审核人员QQ " />
+
+                    <ImageView
+                        android:layout_marginTop="@dimen/padding_15"
+                        android:id="@+id/auth_cope_qq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/auth_cope_qq"
+                        />
+
+                    <TextView
+
+                        style="@style/text_black10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_30"
+                        android:text="添加QQ后，方便审核人员及时与你沟通" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/second3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/auth_second_next" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_submit"
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:enabled="true"
+                android:layout_marginTop="@dimen/padding_20"
+                android:text="提交审核" />
+
+            <TextView
+                style="@style/text_black10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_20"
+                android:layout_marginTop="@dimen/padding_7"
+                android:text="提交后24小时内，会有专人审核，通过就可以开始赚money了！" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <FrameLayout
+        android:id="@+id/view_play_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone"
+        android:background="@color/black"
+        >
+
+        <com.google.android.exoplayer.AspectRatioFrameLayout
+            android:id="@+id/video_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="visible">
+
+            <SurfaceView
+                android:id="@+id/surface_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+
+        </com.google.android.exoplayer.AspectRatioFrameLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>

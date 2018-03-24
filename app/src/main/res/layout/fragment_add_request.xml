@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.chat.seecolove.widget.recycleview.EmptyRecyclerView
+        android:id="@+id/empty_rclv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"/>
+
+    <TextView
+        android:id="@+id/no_data"
+        style="@style/setting_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/padding_3"
+        android:drawableTop="@mipmap/no_data"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/seex_no_req"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+
+        />
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"  android:orientation="horizontal">
+                <LinearLayout android:id="@+id/wxlogo" android:orientation="vertical"
+
+                     android:layout_width="match_parent" android:layout_height="wrap_content"  android:layout_weight="1" >
+                    <ImageView
+                        android:layout_width="60dp"  android:layout_gravity="center" android:textAlignment="center"
+                        android:layout_height="60dp" android:src="@mipmap/wexin" />
+
+
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical"
+
+                    android:layout_weight="1" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/alilogo">
+                    <ImageView
+                        android:layout_width="60dp"  android:layout_gravity="center" android:textAlignment="center"
+                        android:layout_height="60dp" android:src="@mipmap/zhifub" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding_10"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"  android:orientation="horizontal">
+                <com.chat.seecolove.widget.CenterRadioButton
+                    android:id="@+id/wxbtn"
+                    android:layout_width="match_parent"
+                    android:button="@null"
+                    android:drawableStart="@drawable/radiobtn_selector"
+                    android:drawableLeft="@drawable/radiobtn_selector"
+                    android:layout_height="wrap_content" android:layout_weight="1" android:checked="true" android:gravity="center" android:textAlignment="center" />
+
+                <com.chat.seecolove.widget.CenterRadioButton
+                    android:id="@+id/alibtn"
+                    android:layout_width="match_parent"
+                    android:button="@null"
+                    android:drawableStart="@drawable/radiobtn_selector"
+                    android:drawableLeft="@drawable/radiobtn_selector"
+                    android:layout_height="wrap_content" android:layout_weight="1"  android:gravity="center" android:textAlignment="center" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/wxpay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/uploadQr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/btn_back_green"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    android:text="上传二维码"/>
+                <TextView
+                    android:id="@+id/whatis"
+                    android:layout_width="wrap_content"
+                    android:textColor="#00cc18"
+                    android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="什么是微信收款二维码" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/alipay" android:visibility="gone">
+                <LinearLayout
+                    android:id="@+id/aliPicPannel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/uploadQrAli"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/btn_back_ali"
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF"
+                        android:text="上传二维码"/>
+                    <TextView
+                        android:id="@+id/whatisAli"
+                        android:layout_width="wrap_content"
+                        android:textColor="#1D82D4"
+                        android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="什么是支付宝收款二维码" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/padding_15"
+                    android:layout_height="wrap_content" android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        style="@style/form_text_tip"
+                        android:layout_height="wrap_content" android:text="用户名："/>
+                    <EditText
+                        android:id="@+id/aliUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/form_text_edit"
+                        android:hint="请输入您的支付宝账号所绑定的姓名"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/padding_15"
+                    android:layout_height="wrap_content" android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        style="@style/form_text_tip"
+                        android:layout_height="wrap_content" android:text="账号："/>
+                    <EditText
+                        android:id="@+id/aliAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/form_text_edit"
+                        android:hint="请输入您的支付宝账号"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/padding_15"
+                    android:layout_height="wrap_content" android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        style="@style/form_text_tip"
+                        android:layout_height="wrap_content" android:text="手机号码："/>
+                    <EditText
+                        android:id="@+id/userMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        style="@style/form_text_edit"
+                        android:hint="请输入您绑定的手机号码"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/padding_15"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/imagecodeLayout"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        style="@style/form_text_tip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content" android:text="图形验证码："/>
+
+                    <EditText
+                        android:id="@+id/imgCode"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        style="@style/form_text_edit"
+                        android:hint="请输入图形验证码"/>
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/codeimage"
+
+                        android:layout_height="40dp"
+                        android:layout_width="100dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="fill_horizontal"
+
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        />
+                   <!-- <TextView
+                        android:id="@+id/sendCode"
+                        android:text="获取验证码"
+                        android:layout_width="100dp"
+                        android:gravity="fill_horizontal"
+
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textAlignment="center"
+                        android:layout_height="wrap_content"   android:textColor="#00cc18"
+                        android:background="@drawable/btn_border_green"
+                        />-->
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/padding_15"
+                    android:layout_height="wrap_content" android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        style="@style/form_text_tip"
+                        android:layout_height="wrap_content" android:text="验证码："/>
+
+                    <EditText
+                        android:id="@+id/smsCode"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/form_text_edit"
+                        android:hint="请输入手机验证码"/>
+
+                    <TextView
+                        android:id="@+id/sendCode"
+                        android:layout_width="100dp"
+                        android:gravity="fill_horizontal"
+                        android:text="获取验证码"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textAlignment="center"
+                        android:layout_height="wrap_content"   android:textColor="#00cc18"
+                        android:background="@drawable/btn_border_green"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/code_send_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#9b9b9b"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="30dp"
+                    />
+                <TextView
+                    android:id="@+id/savebtn"
+                    android:layout_width="match_parent"
+                    android:gravity="fill_horizontal"
+                    android:text="完成"
+                    android:textSize="17dp"
+                    android:layout_marginTop="15dp"
+                    android:textAlignment="center"
+                    android:paddingTop="15dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:paddingBottom="15dp"
+                    android:layout_height="wrap_content"   android:textColor="#00cc18"
+                    android:background="@drawable/btn_border_green"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/alipay_tip"
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" android:orientation="vertical" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#9b9b9b"
+                    android:textSize="14sp"
+                    android:text="温馨提示：" android:paddingBottom="6dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#9b9b9b"
+                    android:textSize="14sp"
+                    android:text="1.支付宝用户必须为支付宝账户绑定姓名" android:paddingBottom="6dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#9b9b9b"
+                    android:textSize="14sp"
+                    android:text="2.请开启支付宝隐私设置中的“通过手机号/会员名找到我”选项" android:paddingBottom="6dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#9b9b9b"
+                    android:textSize="14sp"
+                    android:text="3.如因用户个人原因导致提现失败，本平台将不承担任何责任" android:paddingBottom="6dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

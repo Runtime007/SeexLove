@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/popu_menu_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding_20"
+            android:paddingRight="@dimen/padding_20">
+
+            <TextView
+                style="@style/text_white14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/padding_20"
+                android:text="充值金额" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/padding_20"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/tx_recharge_balance"
+                    style="@style/text_white18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:src="@mipmap/gray_close"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_recharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="11.5dp"
+            android:paddingRight="11.5dp"
+            android:scrollbars="none" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="@dimen/padding_20"
+            android:layout_marginRight="@dimen/padding_20"
+            android:layout_marginBottom="@dimen/padding_10"
+            android:gravity="left|center"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/text_white14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/padding_20"
+                android:text="选择充值方式" />
+             <ImageView
+                    android:id="@+id/btn_wechat"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/wexin"/>
+
+            <View
+                android:layout_width="19dp"
+                android:layout_height="1dp"/>
+
+                <ImageView
+                    android:id="@+id/btn_zhifubo"
+                    style="@style/text_white16"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/zhifub"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

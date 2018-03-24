@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/small_secretary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_10"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_12"
+        android:paddingTop="@dimen/padding_10">
+
+        <com.chat.seecolove.widget.CircleImageView
+            android:id="@+id/secretary_icon"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@mipmap/icon_service"
+            app:border_color="@color/transparent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/secretary_icon"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding_12"
+                android:maxLines="1"
+                android:text="@string/seex_small_secretary"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding_12"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/padding_5"
+                android:text="工作时间：9:00~18:00，西可客服为你服务"
+                android:textColor="@color/menu_gray"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider"
+        android:background="@color/line_tran40"></View>
+
+</LinearLayout>

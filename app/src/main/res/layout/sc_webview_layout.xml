@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/seekbar_bg_web"
+        android:visibility="gone" />
+    <!--<WebView-->
+    <!--android:id="@+id/webView"-->
+    <!--android:scrollbars="none"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+    <RelativeLayout
+        android:id="@+id/nonVideoLayout"
+        android:layout_below="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.chat.seecolove.cuswebview.VideoEnabledWebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/videoLayout"
+        android:layout_below="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- View that will be shown while the fullscreen video loads (maybe include a spinner and a "Loading..." message) -->
+        <View
+            android:id="@+id/videoLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

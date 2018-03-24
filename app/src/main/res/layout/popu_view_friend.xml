@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:alpha="0.9"
+        android:background="@drawable/popu_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingRight="@dimen/padding_15"
+            >
+            <TextView
+                style="@style/text_white14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="25dp"
+                android:text="添加聊友"
+                android:textColor="@drawable/pop_menu_text" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/request"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingRight="@dimen/padding_15"
+            >
+            <TextView
+                android:id="@+id/te"
+                style="@style/text_white14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="25dp"
+                android:text="好友请求"
+                android:textColor="@drawable/pop_menu_text" />
+            <ImageView
+                android:id="@+id/friend_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/te"
+                android:layout_marginLeft="@dimen/padding_3"
+                android:src="@drawable/red_point" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

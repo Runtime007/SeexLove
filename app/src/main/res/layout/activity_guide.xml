@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/padding_3"
+            android:src="@drawable/point_bg" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/padding_3"
+            android:src="@drawable/point_bg" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/padding_3"
+            android:src="@drawable/point_bg" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/enter"
+        style="@style/text_more16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/padding_30"
+        android:paddingRight="@dimen/padding_30"
+        android:background="@drawable/btn_advance"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/ll"
+        android:drawableRight="@mipmap/start_hand"
+        android:drawablePadding="@dimen/padding_7"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textColor="#aab0c0"
+        android:text="@string/seex_start_app" />
+</RelativeLayout>

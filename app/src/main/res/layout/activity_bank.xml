@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/view_bind_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/edit_card"
+            style="@style/edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_10"
+            android:gravity="left"
+            android:hint="请输入银行卡号"
+            android:inputType="number"
+            android:maxLength="19"
+            android:singleLine="true" />
+
+        <include layout="@layout/line_hor_mar_left_right" />
+
+        <ImageView
+            android:id="@+id/btn_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:padding="@dimen/padding_5"
+            android:src="@mipmap/icon_prompt"/>
+        <EditText
+            android:id="@+id/edit_username"
+            style="@style/edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_5"
+            android:gravity="left"
+            android:hint="持卡人姓名"
+            android:inputType="text"
+            android:maxLength="19"
+            android:singleLine="true" />
+        <include layout="@layout/line_hor_mar_left_right" />
+        <EditText
+            android:id="@+id/edit_identity"
+            style="@style/edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_5"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:gravity="left"
+            android:hint="身份证号"
+            android:inputType="text"
+            android:maxLength="18"
+            android:singleLine="true" />
+        <include layout="@layout/line_hor_mar_left_right" />
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:enabled="false"
+            android:layout_marginTop="@dimen/padding_27"
+            android:layout_marginBottom="@dimen/padding_10"
+            android:text="@string/seex_over" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/view_bind_sed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/card_num"
+                style="@style/edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_27"
+                android:gravity="left"
+                android:inputType="number"
+                android:maxLength="19"
+                android:singleLine="true"
+                android:text="工商银行" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_over"
+            style="@style/Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/padding_27"
+            android:text="@string/seex_over" />
+    </LinearLayout>
+</LinearLayout>

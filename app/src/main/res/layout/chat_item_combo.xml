@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/chat_item_combo_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="70dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/combo_anim_bg_0"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/chat_item_combo_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seex_chat_combo_text"
+                android:maxLines="1"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/chat_item_combo_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                fresco:actualImageScaleType="centerInside"
+                fresco:placeholderImage="@drawable/gift_prop_0" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

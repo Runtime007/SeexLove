@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/share_and_award_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    />
+
+                <LinearLayout
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="200dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/menu_gray"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:background="@color/white">
+
+                        <LinearLayout
+                            android:id="@+id/share_and_award_num"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="已累计邀请"/>
+                                <TextView
+                                    android:id="@+id/share_and_award_num_text"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0人"/>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:background="#DCDCDC"
+                            />
+                        <LinearLayout
+                            android:id="@+id/share_and_award_money"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="累计获得奖励"/>
+                                <TextView
+                                    android:id="@+id/share_and_award_money_text"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0元"/>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/menu_gray"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:paddingRight="35dp"
+                android:paddingLeft="35dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/share_and_award_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/share_and_award_item_bg">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        fresco:actualImageScaleType="centerCrop"
+                        fresco:roundAsCircle="false"
+                        fresco:roundedCornerRadius="5dp"
+                        fresco:roundTopLeft="true"
+                        fresco:roundTopRight="false"
+                        fresco:roundBottomLeft="false"
+                        fresco:roundBottomRight="true"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/share_and_award_item_type1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/text_gray14"
+                            android:text="奖励一"/>
+                        <TextView
+                            android:id="@+id/share_and_award_item_content1"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:text="6元邀请奖"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@mipmap/icon_tips"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/share_and_award_2"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/share_and_award_item_bg">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        fresco:actualImageScaleType="centerCrop"
+                        fresco:roundAsCircle="false"
+                        fresco:roundedCornerRadius="5dp"
+                        fresco:roundTopLeft="true"
+                        fresco:roundTopRight="false"
+                        fresco:roundBottomLeft="false"
+                        fresco:roundBottomRight="true"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/share_and_award_item_type2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/text_gray14"
+                            android:text="奖励二"/>
+                        <TextView
+                            android:id="@+id/share_and_award_item_content2"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:text="10%消费提成"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@mipmap/icon_tips"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/share_and_award_3"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/share_and_award_item_bg">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        fresco:actualImageScaleType="centerCrop"
+                        fresco:roundAsCircle="false"
+                        fresco:roundedCornerRadius="5dp"
+                        fresco:roundTopLeft="true"
+                        fresco:roundTopRight="false"
+                        fresco:roundBottomLeft="false"
+                        fresco:roundBottomRight="true"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/share_and_award_item_type3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/text_gray14"
+                            android:text="奖励三"/>
+                        <TextView
+                            android:id="@+id/share_and_award_item_content3"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:text="10%消费提成"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@mipmap/icon_tips"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/menu_gray"
+                    android:textSize="14sp"
+                    android:text="查看我的奖励"/>
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="2dp"
+                    android:src="@mipmap/mine_arrow"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:weightSum="2"
+                >
+                <TextView
+                    android:id="@+id/share_and_award_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/btn_green"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:text="立即分享"/>
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:background="@color/transparent"/>
+                <TextView
+                    android:id="@+id/share_and_award_my"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_green"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:text="我的奖励"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

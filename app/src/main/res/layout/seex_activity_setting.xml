@@ -1,0 +1,348 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bottom_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/app_bg_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding_7"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/padding_7">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/text_setting15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="消息语音" />
+
+                    <TextView
+                        android:id="@+id/msgRingText"
+                        style="@style/text_setting13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/seex_set_msg_ring_close" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/switch_msg_ring"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/seex_checkbox_bg"
+                    android:textColor="@color/qing_green" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_1"
+                android:background="@color/line_tran40" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding_7"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/padding_7">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/text_setting15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="消息振动" />
+
+                    <TextView
+                        android:id="@+id/msgVibrateText"
+                        style="@style/text_setting13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/seex_set_msg_vibrate_close" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/switch_msg_vibrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/seex_checkbox_bg"
+                    android:textColor="@color/qing_green" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_1"
+                android:background="@color/line_tran40" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding_7"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/padding_7">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/text_setting15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="展示礼物" />
+
+                    <TextView
+                        android:id="@+id/giftText"
+                        style="@style/text_setting13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/seex_set_gift_close" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/switch_gift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/seex_checkbox_bg"
+                    android:textColor="@color/qing_green" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_5"
+                android:background="@color/line_tran40"></View>
+
+            <RelativeLayout
+                android:id="@+id/list_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    style="@style/text_setting15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="黑名单" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_5"
+                    android:drawableRight="@mipmap/mine_arrow" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_5"
+                android:background="@color/line_tran40"></View>
+
+            <RelativeLayout
+                android:id="@+id/view_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/text_setting15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="设置消息提醒" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_5"
+                    android:drawableRight="@mipmap/mine_arrow" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include layout="@layout/line_hor_mar_left" />
+
+                <TextView
+                    android:id="@+id/permission_text"
+                    style="@style/info_more12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_10"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/padding_5" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/view_clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/cache_tx"
+                    style="@style/text_setting15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="清理缓存  (0KB)" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_5"
+                    android:drawableRight="@mipmap/mine_arrow" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_hor_mar_left" />
+
+            <RelativeLayout
+                android:id="@+id/view_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/check_version"
+                    style="@style/text_setting15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="检查更新" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/padding_5"
+                    android:drawableRight="@mipmap/mine_arrow" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_hor_mar_left" />
+
+            <RelativeLayout
+                android:id="@+id/view_about"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="0.5dp"
+                android:background="@drawable/item_bg"
+                android:clickable="true"
+                android:paddingLeft="@dimen/padding_15"
+                android:paddingRight="@dimen/padding_15"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/text_black15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="关于西可" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/padding_15"
+                    android:src="@mipmap/arrow_setting" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/btn_logout"
+                style="@style/red_tip15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_20"
+                android:background="?android:attr/selectableItemBackground"
+                android:enabled="true"
+                android:gravity="center"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="退出登录" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

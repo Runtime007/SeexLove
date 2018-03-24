@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/room_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#666666">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/touser_head_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:overlayImage="@color/black_tran40"
+        />
+
+    <!--本地通话 和 远程通话用户头像列表-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/user_local_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/view_big_blur"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/blur_bg"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/app_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/user_local_voice_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:scaleType="centerCrop"
+            android:src="@color/black"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/down_time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/padding_10"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/down_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11"
+            android:textColor="@color/title_bg"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/down_time_price"
+            style="@style/text_white15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_15"
+            android:text="计费倒计时" />
+    </LinearLayout>
+    <com.chat.seecolove.widget.SeexDisGiftView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/seexdisgifview"
+        android:layout_marginRight="70dp"/>
+    <com.chat.seecolove.widget.SeexSmallGift
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/smallgift">
+    </com.chat.seecolove.widget.SeexSmallGift>
+
+    <com.chat.seecolove.widget.SeexChatView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/seexchatview">
+    </com.chat.seecolove.widget.SeexChatView>
+    <include
+        android:id="@+id/room_pornographic_view"
+        layout="@layout/room_pornographic" />
+    <!--打赏列表 -->
+    <include
+        android:id="@+id/view_enjoy"
+        layout="@layout/popu_room_enjoy" />
+
+    <include
+        android:id="@+id/view_enjoy_seller"
+        layout="@layout/popu_room_enjoy_seller" />
+
+    <!--充值结果 -->
+    <include
+        android:id="@+id/view_recharge_succ"
+        layout="@layout/popu_room_recharge_succ" />
+
+    <include
+        android:id="@+id/view_recharge_fail"
+        layout="@layout/popu_room_recharge_fail" />
+
+    <!--菜单列表 -->
+    <include
+        android:id="@+id/view_menu"
+        layout="@layout/popu_room_menu" />
+    <!--美颜菜单 -->
+    <include
+        android:id="@+id/view_beauty"
+        layout="@layout/popu_room_beauty"
+        />
+    <!--举报列表-->
+    <include
+        android:id="@+id/report_layout"
+        layout="@layout/room_report_layout" />
+
+    <!--时间-->
+
+
+
+    <FrameLayout
+        android:id="@+id/custom_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:id="@+id/wrapper_session_stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seex_room_comnition_bg"
+                android:gravity="center|left"
+                android:layout_marginTop="70dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/stat_time"
+                    style="@style/text_white12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_10"
+                    android:layout_marginRight="@dimen/padding_10"
+                    android:text="00:00" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/comnition"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    fresco:roundAsCircle="true"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/addfriend"
+                    android:src="@mipmap/home_add"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/used_money"
+                style="@style/text_white12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:background="@drawable/black_text_bg"
+                android:drawablePadding="@dimen/padding_5"
+                android:visibility="gone"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/used_money_reward"
+                style="@style/text_white12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:background="@drawable/black_text_bg"
+                android:drawablePadding="@dimen/padding_5"
+                android:minEms="3"
+                android:text="0.00" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/camera_open"
+                android:layout_marginTop="@dimen/padding_5"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/camere"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/chat_ic_warning"
+                android:layout_marginTop="@dimen/padding_5"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/no_monye_tip"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/user_remote_views"
+            android:layout_width="72dp"
+            android:layout_height="128dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/padding_10"
+            android:layout_marginRight="@dimen/padding_10"
+            android:orientation="horizontal" />
+    </FrameLayout>
+
+    <!-- 拨号 测试隐藏-->
+    <RelativeLayout
+        android:id="@+id/view_call"
+        android:background="@mipmap/blur_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:id="@+id/call_tip"
+                android:text="正在呼叫对方"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/padding_10"
+                android:orientation="horizontal">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/me_icon"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    fresco:actualImageScaleType="centerCrop"
+                    fresco:placeholderImage="@color/white"
+                    fresco:roundAsCircle="true" />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="......"/>
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/user_icon"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    fresco:actualImageScaleType="centerCrop"
+                    fresco:placeholderImage="@color/white"
+                    fresco:roundAsCircle="true" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/nickname"
+                style="@style/text_white18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_20"
+                android:text=""
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/call_text"
+                style="@style/text_white14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_10" />
+
+            <TextView
+                android:id="@+id/isCalling_text"
+                style="@style/text_white12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:padding="@dimen/padding_3"
+                android:background="@drawable/tv_call_price"
+                android:visibility="gone"
+                android:text="" />
+
+
+            <TextView
+                android:id="@+id/text_tip"
+                style="@style/text_white12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="49dp"
+                android:layout_marginRight="49dp"
+                android:layout_marginTop="60dp"
+                android:drawablePadding="@dimen/activity_horizontal_margin"
+                android:padding="@dimen/padding_7"
+                android:text="@string/seex_tip_text" />
+
+            <TextView
+                style="@style/text_white12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+
+            <TextView
+                android:id="@+id/price_tip"
+                style="@style/text_white18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/padding_5"
+                android:text=""
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="90dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_cancle_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/seex_call_hangup" />
+
+            <ImageView
+                android:id="@+id/btn_agree_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/seex_incall_bg"
+                android:visibility="gone"
+                 />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+    <include
+        android:id="@+id/general_layout"
+        layout="@layout/general_dialog_layout"
+        />
+
+    <ImageView
+        android:id="@+id/room_enjoy_imgs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gift_prop_0"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/room_anim_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        android:layout_marginBottom="200dp"
+        android:layout_marginTop="180dp"
+        android:gravity="top">
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/gift_anim_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </RelativeLayout>
+</RelativeLayout>

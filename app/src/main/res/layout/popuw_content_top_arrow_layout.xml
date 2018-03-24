@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/pctal_item_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <com.chat.seecolove.widget.CustomRoundAngleLayout
+            android:id="@+id/pctal_view"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="#666666"
+            android:minHeight="45dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            fresco:round_width="5dp"
+            fresco:round_height="5dp"
+            fresco:top_left="true"
+            fresco:top_right="true"
+            fresco:bottom_left="true"
+            fresco:bottom_right="true"
+
+            >
+            <TextView
+                android:id="@+id/pctal_view_copy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="复制"
+                android:textColor="#ffffff"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="vertical"
+                android:id="@+id/content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/hint"></LinearLayout>
+            <TextView
+                android:id="@+id/pctal_view_del"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="#ffffff"/>
+
+        </com.chat.seecolove.widget.CustomRoundAngleLayout>
+
+
+
+
+        <com.chat.seecolove.widget.CustomPopView
+            android:layout_width="10dp"
+            android:layout_height="5dp"
+            android:orientation="vertical"
+            android:background="#666666"
+            fresco:round_width="10dp"
+            fresco:round_height="5dp"
+            fresco:top_left="true"
+            fresco:top_right="true"
+            fresco:bottom_left="true"
+            fresco:bottom_right="true"
+            >
+
+
+        </com.chat.seecolove.widget.CustomPopView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

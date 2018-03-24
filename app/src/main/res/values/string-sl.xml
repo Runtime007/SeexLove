@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources  xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="seex_hello_world">Hello world!</string>
+    <string name="seex_integral">等级详情</string>
+    <string name="seex_requst">关注请求</string>
+    <string name="seex_feedback">意见反馈</string>
+    <string name="seex_feedback_tip">如在使用过程中遇到紧急问题可关注西可管理员微信号－联系客服进行处理</string>
+    <string name="seex_login">登录</string>
+    <string name="seex_reg">注册</string>
+    <string name="seex_nickname">昵称</string>
+    <string name="seex_intro">自我介绍</string>
+    <string name="seex_album_title">个人相册</string>
+    <string name="seex_sex">性别</string>
+    <string name="seex_age">年龄</string>
+    <string name="seex_progress_text">请稍等......</string>
+    <string name="avcoding">转码中请稍等......</string>
+    <string name="avcoding_error">转码失败，请稍后再试...</string>
+    <string name="seex_canclefriend">取消关注TA？</string>
+    <string name="seex_perfect_title">完善资料</string>
+    <string name="seex_perfect_sex_toast">请选择性别！</string>
+    <string name="seex_perfect_date_tip">请选择生日！</string>
+    <string name="seex_noperfect">请完善资料！</string>
+    <string name="seex_tobeSeller">亲爱的朋友，成为播主后就无法和异性聊天了！确定要申请吗?</string>
+    <string name="seex_delete_tip">确定删除该记录？</string>
+    <string name="seex_delete_fri_tip">确定删除该关注？</string>
+    <string name="seex_not_friend">TA不是你的关注，请添加关注后呼叫</string>
+    <string name="seex_goto_add">现在去加</string>
+    <string name="seex_to_userinfo">去完善</string>
+    <string name="seex_authing">信息审核中，请稍安勿躁！</string>
+    <string name="seex_authing_black">很抱歉，您不符合认证条件，不可再发起认证！</string>
+    <string name="seex_reg_phone_hint">请输入手机号</string>
+    <string name="seex_reg_psd_hint">设置登录密码</string>
+    <string name="seex_reg_newpsd_hint">请输入密码</string>
+    <string name="seex_login_psd_hint">请输入登录密码</string>
+    <string name="seex_reg_code_hint">输入验证码</string>
+    <string name="seex_set_price">设置视频收费价格</string>
+    <string name="seex_title_price">价格设置</string>
+    <string name="seex_poundage_tip">每笔收入平台将收取一定比例的服务费\n详情请咨询西可客服</string>
+    <string name="seex_uploading">正在上传...</string>
+    <string name="seex_loading">请求中...</string>
+    <string name="seex_onlineing">正在上线...</string>
+    <string name="seex_cancleing">正在下线...</string>
+    <string name="seex_logout_title">退出登录</string>
+    <string name="seex_logout_text">确定退出当前应用账号？</string>
+    <string name="seex_clear_cache">确定清除缓存？</string>
+    <string name="seex_download">正在下载应用，请耐心等待！</string>
+    <string name="seex_newversion">有新版本</string>
+    <string name="seex_next_time">下次</string>
+    <string name="seex_update">立即更新</string>
+    <string name="seex_no_newversion">当前已是最新版本</string>
+    <string name="seex_room_buyber_balance_insufficient">余额不足3分钟，请及时购买米粒！</string>
+    <string name="seex_room_buyber_enjoy">去购买</string>
+    <string name="seex_room_buyber_enjoy_canle">稍后</string>
+    <string name="seex_select_album">选择相册</string>
+    <string name="seex_can_not_wd">可用提现余额不足，无法提现</string>
+    <string name="seex_share_and_award_topUpShareAssociate">确定将所有奖励转入余额？</string>
+    <string name="seex_share_and_award_guizhe">2. 可提现金额必须大于%1$s元，小于%2$s元可以一键转入余额进行消费；</string>
+
+    <string name="seex_reg_succ">注册成功！</string>
+    <string name="seex_advance_succ">提现申请提交成功！我们将在1~3个工作日处理完成</string>
+    <string name="seex_advance_tip">确认使用此提现方式提现么(提现金额：%s)？</string>
+    <string name="seex_advance_del">确认删除此提现方式么？</string>
+    <string name="seex_later">稍后</string>
+    <string name="seex_goto_share">分享赚钱</string>
+    <string name="seex_goto_recharge">去购买</string>
+    <string name="seex_change_one">换个试试</string>
+    <string name="seex_i_am_man">我是男</string>
+    <string name="seex_i_am_women">我是女</string>
+    <string name="seex_unit">元/分钟</string>
+    <string name="seex_re_code">重新发送</string>
+    <string name="seex_psd_style">0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</string>
+    <string name="seex_name_hint">昵称</string>
+    <string name="seex_editname_title">修改昵称</string>
+    <string name="seex_nav_home">首页</string>
+    <string name="seex_nav_account">余额</string>
+    <string name="seex_nav_regcharge">购买</string>
+    <string name="seex_no_more">暂时就这些啦</string>
+    <string name="seex_own_room">不能和自己视频哦！</string>
+    <string name="seex_must_offline">只有下线了才能视频聊天哦！</string>
+    <string name="seex_profile_tip">性别，出生日期等基本资料一经提交无法再进行更改，确定要提交吗？</string>
+    <string name="seex_no_usericon">上传头像后才可以上线赚钱喔！</string>
+    <string name="seex_no_money">你的余额不足，快去购买米粒吧！</string>
+    <string name="seex_chat_payment_operation">每次发起聊天都需要向TA支付10米粒/条</string>
+    <string name="seex_chat_resend_msg">是否要重新发送</string>
+    <string name="seex_chat_delete_msg">是否要删除该条消息</string>
+    <string name="seex_video_payment_operation">接通后不足1分钟，按1分钟计费</string>
+    <string name="seex_chat_no_payment_operation">不再提示</string>
+    <string name="seex_room_no_money">余额不足！</string>
+    <string name="seex_buyer_no_money">TA余额不足！</string>
+    <string name="seex_getData_fail">请求超时！</string>
+    <string name="seex_call_fail">TA手机可能不在身边，请稍后再试！</string>
+    <string name="seex_by_call_fail">TA不方便接听，请稍候再试！</string>
+    <string name="seex_by_call_busy">TA正忙，请稍候再试！</string>
+    <string name="seex_change_card_tip">余额为0才能换卡！</string>
+    <string name="seex_phone_error">手机号格式错误</string>
+    <string name="seex_phone_rule">手机号必须是11位</string>
+    <string name="seex_code_error">验证码格式错误</string>
+    <string name="seex_input_code_error">请输入验证码</string>
+    <string name="seex_psd_error">请输入6~12位的密码</string>
+    <string name="seex_room_prepare">TA正在火速的赶来...，请稍等</string>
+    <string name="seex_close_mic">关闭麦克风</string>
+    <string name="seex_open_mic">开启麦克风</string>
+    <string name="seex_open_video">视频模式</string>
+    <string name="seex_close_video">语音模式</string>
+    <string name="seex_no_upload_video">请先录制视频！</string>
+    <string name="seex_no_upload_icon">请先上传头像！</string>
+    <string name="seex_tip_text">请勿涉及黄、辱骂、扰乱社会秩序等违规行为，请您严格遵守； 违反者将做封号处理</string>
+    <string name="seex_tip">该银行卡是您指定的唯一提现账户</string>
+    <string name="seex_tip_call">要求到其他平台交易大多是诈骗行为，多人收到的财产损失\n请举报</string>
+    <string name="seex_setting_account">当前余额</string>
+    <string name="seex_pay_account">购买</string>
+    <string name="seex_advance">提现</string>
+    <string name="seex_setting">设置</string>
+    <string name="seex_apply_withdraw">申请提现</string>
+    <string name="seex_withdraw_config_ok">提现方式添加成功</string>
+    <string name="seex_send_v_code">验证码将发送至：%s</string>
+    <string name="seex_wating">服务器繁忙，请稍后再试</string>
+    <string name="seex_withdraw_ml">%s米粒</string>
+    <string name="seex_withdraw_ca">可提现金额：%s元</string>
+    <string name="seex_regcharge_error">至少购买1元钱</string>
+    <string name="seex_img_pick_failed">您没有选择图片，请重新选择</string>
+    <string name="seex_share_make_money">分享赚钱</string>
+    <string name="seex_choice_photo_or_video_layout_title">所有照片</string>
+    <string name="seex_share_make_money_my_num">累计已邀请%s人</string>
+    <string name="seex_getvcode">获取验证码</string>
+    <string name="seex_required_mobile">请输入手机号码</string>
+    <string name="seex_required_smscode">请输入手机验证码</string>
+    <string name="seex_required_wxpic">请上传微信收款二维码</string>
+    <string name="seex_required_alipic">请上传支付宝收款二维码</string>
+    <string name="seex_required_aliusername">请输入支付宝用户名</string>
+    <string name="seex_required_aliacount">请输入支付宝账号</string>
+    <string name="seex_tip_max_pay_config">当前最多添加2个提现账户</string>
+
+
+    <string name="seex_room_menu_mic_open">开启话筒</string>
+    <string name="seex_room_menu_mic_close">关闭话筒</string>
+    <string name="seex_room_menu_car">反转摄像头</string>
+    <string name="seex_room_menu_add">加关注</string>
+    <string name="seex_room_menu_added">已添加</string>
+    <string name="seex_room_menu_report">举报</string>
+    <string name="seex_room_menu_beauty">美颜</string>
+
+    <string name="seex_my_invite_num">我邀请的人(%s)</string>
+
+
+    <string name="seex_action_settings">Settings</string>
+    <string name="seex_title_share">分享</string>
+    <string name="seex_channel_id">0</string>
+    <string name="seex_over">完成</string>
+    <string name="seex_back">返回</string>
+    <string name="seex_close">关闭</string>
+    <string name="seex_cancle">取消</string>
+    <string name="seex_sure">确定</string>
+    <string name="seex_i_know">知道了</string>
+    <string name="seex_onclick_exit">再按一次退出应用</string>
+    <string name="seex_addfriend">添加关注？</string>
+    <string name="seex_tobe">去申请</string>
+    <string name="seex_goto_set">去设置</string>
+    <string name="seex_hot">热门</string>
+    <string name="seex_news">新人</string>
+    <string name="seex_toomoney">周榜</string>
+    <string name="seex_home">首页</string>
+    <string name="seex_call_log">通话记录</string>
+    <string name="seex_call_log_and_msg">消息</string>
+    <string name="seex_friend">关注</string>
+    <string name="seex_circle">朋友圈</string>
+    <string name="seex_mine">我</string>
+    <string name="seex_auth">成为主播赚钱</string>
+    <string name="seex_find">查找</string>
+    <string name="seex_change_theme">个性化设置</string>
+    <string name="seex_cube_ptr_pull_down">下拉刷新</string>
+    <string name="seex_cube_ptr_pull_down_to_refresh">下拉刷新</string>
+    <string name="seex_cube_ptr_release_to_refresh">释放刷新</string>
+    <string name="seex_cube_ptr_refreshing">加载中...</string>
+    <string name="seex_cube_ptr_refresh_complete">更新完成.</string>
+    <string name="seex_cube_ptr_last_update">上次更新:&#160;</string>
+    <string name="seex_cube_ptr_seconds_ago">&#160;秒之前</string>
+    <string name="seex_cube_ptr_minutes_ago">&#160;分钟之前</string>
+    <string name="seex_cube_ptr_hours_ago">&#160;小时之前</string>
+    <string name="seex_no_log_file">找不到本地日志文件</string>
+    <string name="seex_fb_fail">反馈失败！</string>
+    <string name="seex_no_video">找不到视频文件</string>
+    <string name="seex_error_drm_not_supported">Protected content not supported on API levels below 18</string>
+    <string name="seex_error_drm_unsupported_scheme">This device does not support the required DRM scheme</string>
+    <string name="seex_error_drm_unknown">An unknown DRM error occurred</string>
+    <string name="seex_error_no_decoder">This device does not provide a decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+    <string name="seex_error_no_secure_decoder">This device does not provide a secure decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+    <string name="seex_error_querying_decoders">Unable to query device decoders</string>
+    <string name="seex_error_instantiating_decoder">Unable to instantiate decoder <xliff:g id="decoder_name">%1$s</xliff:g></string>
+    <string name="seex_storage_permission_denied">Permission to access storage was denied</string>
+    <string name="seex_title_activity_main2">Main2Activity</string>
+    <string name="seex_title_activity_settings">Settings</string>
+    <!-- Strings related to Settings -->
+    <!-- Example General settings -->
+    <string name="seex_pref_header_general">General</string>
+
+    <string name="seex_pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="seex_pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="seex_pref_title_display_name">Display name</string>
+    <string name="seex_pref_default_display_name">John Smith</string>
+
+    <string name="seex_pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="seex_pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="seex_pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="seex_pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="seex_pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="seex_pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="seex_pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="seex_pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="seex_pref_header_notifications">Notifications</string>
+
+    <string name="seex_pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="seex_pref_title_ringtone">Ringtone</string>
+    <string name="seex_pref_ringtone_silent">Silent</string>
+
+    <string name="seex_pref_title_vibrate">Vibrate</string>
+
+
+    <!--云信-->
+    <string name="seex_nrtc_setting_vie_crop_key">nrtc_setting_vie_crop_key</string>
+    <string name="seex_nrtc_setting_vie_quality_key">nrtc_setting_vie_quality_key</string>
+    <string name="seex_nrtc_setting_other_device_default_rotation_key">nrtc_setting_other_device_default_rotation_key</string>
+    <string name="seex_nrtc_setting_other_device_default_rotation">设备默认旋转角度(特殊设备使用)</string>
+    <string name="seex_nrtc_setting_other_device_rotation_fixed_offset_key">nrtc_setting_other_device_rotation_fixed_offset_key</string>
+    <string name="seex_nrtc_setting_other_device_rotation_fixed_offset">设备旋转角度修正偏移量(特殊设备使用)</string>
+
+    <string name="seex_nrtc_setting_voe_muted">语音流静音处理</string>
+    <string name="seex_nrtc_setting_vie_muted_key">nrtc_setting_vie_muted_key</string>
+    <string name="seex_nrtc_setting_vie_muted">视频流静音处理</string>
+    <string name="seex_nrtc_setting_vie_fps_reported_key">nrtc_setting_vie_fps_reported_key</string>
+    <string name="seex_nrtc_setting_vie_fps_reported">帧率汇报</string>
+    <string name="seex_nrtc_setting_vie_max_bitrate_key">nrtc_setting_vie_max_bitrate_key</string>
+    <string name="seex_nrtc_setting_vie_max_bitrate">码率(Kbps)</string>
+    <string name="seex_nrtc_setting_voe_audio_aec_key">nrtc_setting_voe_audio_aec_key</string>
+    <string name="seex_nrtc_setting_voe_audio_aec">Acoustic Echo Canceler</string>
+    <string name="seex_nrtc_setting_voe_audio_agc_key">nrtc_setting_voe_audio_agc_key</string>
+    <string name="seex_nrtc_setting_voe_audio_agc">Automatic Gain Control</string>
+    <string name="seex_nrtc_setting_voe_audio_ns_key">nrtc_setting_voe_audio_ns_key</string>
+    <string name="seex_nrtc_setting_voe_audio_ns">Noise Suppressor</string>
+
+    <string name="seex_mail_sure">确认</string>
+    <string name="seex_mail_friend_wait_add">等待TA添加你为关注</string>
+    <string name="seex_mail_friend_wait_agree">TA已添加你为关注</string>
+    <string name="seex_mail_friend_wait_refused">TA已拒绝添加你为关注</string>
+    <string name="seex_mail_friend_req_agree">同意</string>
+    <string name="seex_became_seller_apply_now">立即申请</string>
+    <string name="seex_become_seller_apply_notify">完成认证 即能享受</string>
+    <string name="seex_become_seller_home_recomment_desrible">高曝光展示位，带来更高收益！</string>
+    <string name="seex_become_seller_home_recment_title">首页推荐</string>
+    <string name="seex_become_seller_video_price_desrible">可根据需求来设置视频定价</string>
+    <string name="seex_nrtc_setting_vie_rotation_key">nrtc_setting_vie_rotation_key</string>
+    <string name="seex_nrtc_setting_vie_rotation">画面旋转</string>
+    <string name="seex_nrtc_setting_vie_default_front_camera_key">nrtc_setting_vie_default_front_camera_key</string>
+    <string name="seex_nrtc_setting_vie_default_front_camera">默认前置摄像头</string>
+    <string name="seex_nrtc_setting_vie_hw_encoder_key">nrtc_setting_vie_hw_encoder_key</string>
+    <string name="seex_nrtc_setting_vie_hw_encoder">硬件编码(仅部分设备支持)</string>
+    <string name="seex_nrtc_setting_vie_hw_decoder_key">nrtc_setting_vie_hw_decoder_key</string>
+    <string name="seex_nrtc_setting_vie_hw_decoder">硬件解码(仅部分设备支持)</string>
+    <string name="seex_nrtc_setting_other_server_record_audio_key">nrtc_setting_other_server_record_audio_key</string>
+    <string name="seex_nrtc_setting_other_server_record_audio">音频服务器录制</string>
+    <string name="seex_nrtc_setting_other_server_record_video_key">nrtc_setting_other_server_record_video_key</string>
+    <string name="seex_nrtc_setting_other_server_record_video">视频服务器录制</string>
+    <string name="seex_nrtc_setting_voe_call_proximity_key">nrtc_setting_voe_call_proximity_key</string>
+    <string name="seex_nrtc_setting_voe_call_proximity">通话期间关闭屏幕</string>
+    <string name="seex_nrtc_setting_voe_muted_key">nrtc_setting_voe_muted_key</string>
+    <string name="seex_become_seller_video_price_title">视频定价</string>
+    <string name="seex_become_seller_identify_desrible">签约官方经济公司，有底薪、有福利，主打西可女神！</string>
+    <string name="seex_become_seller_identify_title">专属认证</string>
+    <string name="seex_become_seller_apply_is_agree">申请即表示同意</string>
+    <!-- 图片查看器 -->
+    <string name="seex_viewpager_indicator">%1$d/%2$d</string>
+    <string name="seex_my_request">我的请求</string>
+    <string name="seex_refuse">拒绝</string>
+    <string name="seex_delete">删除</string>
+    <string name="seex_clear_all">清空</string>
+    <string name="seex_request_fragment_add">已添加</string>
+    <string name="seex_request_fragment_refuse">已拒绝</string>
+    <string name="seex_request_fragment_clear_friends">清空关注请求列表？</string>
+    <string name="seex_request_fragment_clear_my">清空我的请求列表？</string>
+    <string name="seex_cancel">取消</string>
+    <string name="seex_rename_setting">设置 %1$s 的备注名:</string>
+    <string name="seex_addRequest_new_friends">新的关注请求</string>
+    <string name="seex_friends_official">官方</string>
+    <string name="seex_new_friends">新的关注</string>
+    <string name="seex_new_friends_describle">主动关注与通过请求的关注</string>
+    <string name="seex_small_secretary">西可客服</string>
+    <string name="seex_video_open">视频已开启</string>
+    <string name="seex_video_close">视频已关闭</string>
+    <string name="seex_voice_close">语音已关闭</string>
+    <string name="seex_voice_open">语音已开启</string>
+    <string name="seex_jiaoyi_code">交易记录</string>
+    <string name="seex_updata_psd">请输入登录密码</string>
+    <string name="seex_reset_psw">重置密码</string>
+    <string name="seex_fast_loading">验证码登录</string>
+    <string name="seex_password_loading">密码登录</string>
+    <string name="seex_fast_reg">立即注册</string>
+    <string name="seex_loading_app">登录西可Love</string>
+    <string name="seex_forget_passwords">忘记密码？</string>
+    <string name="seex_mail_friend_req_add">已添加</string>
+    <string name="seex_profile_price">%s元</string>
+    <string name="seex_room_recharge_money">%d元</string>
+    <string name="seex_room_recharge_money_give">(送%d元)</string>
+    <string name="seex_room_can_give_money">(可打赏金额:%f元)</string>
+    <string name="seex_room_pornographic_text">鉴黄系统检测到视频内容涉及色情淫秽，西可Love现对您提出严肃警告。如再次发生，我们将可能对您的帐号进行冻结处理。</string>
+    <string name="seex_choice_num">发送(%s)</string>
+    <string name="seex_chat_combo_text">送了你%s</string>
+    <string name="seex_javascript_recharge">您暂时无法购买!请联系西可小秘书</string>
+    <string name="seex_feed_detail">订阅详情</string>
+    <string name="seex_msg">进入友盟社区</string>
+    <string name="seex_user_info">用户信息页面</string>
+    <string name="seex_search_topic">话题搜索</string>
+    <string name="seex_select_location">话题搜索</string>
+    <string name="seex_follow_topic">话题搜索</string>
+    <string name="seex_money_more_10">申请主播，余额不能超过1000米粒！</string>
+    <string name="seex_c_c_add">TA设置了隐私权限，换个人试试吧</string>
+    <string name="seex_c_c_im">TA设置了隐私权限，换个人试试吧</string>
+    <string name="seex_c_c_video">TA设置了隐私权限，换个人试试吧</string>
+    <string name="seex_b_b_add">TA设置了隐私权限，换个人试试吧</string>
+    <string name="seex_b_b_im">TA设置了隐私权限，换个人试试吧</string>
+    <string name="seex_b_b_video">TA设置了隐私权限，换个人试试吧</string>
+    <string name="seex_de_intro">西可Love，每个人都不应该孤单</string>
+    <string name="seex_become_seller_apply_sure">确认申请</string>
+    <string name="seex_become_seller_upload">上传</string>
+    <string name="seex_become_seller_title">成为主播赚钱</string>
+    <string name="seex_share_earn_money_go_share">分享赚钱</string>
+    <string name="seex_share_earn_money_invite_total">累计邀请</string>
+    <string name="seex_share_earn_money_award_total">累计奖励</string>
+    <string name="seex_share_earn_money_look_award">查看我的奖励</string>
+    <string name="seex_set_msg_ring_open">消息来时有语音提示</string>
+    <string name="seex_set_msg_ring_close">消息来时无语音提示</string>
+    <string name="seex_set_msg_vibrate_open">消息来时有振动提示</string>
+    <string name="seex_set_msg_vibrate_close">消息来时无振动提示</string>
+    <string name="seex_set_gift_open">TA可以查看您送出的礼物</string>
+    <string name="seex_set_gift_close">TA不可以查看您送出的礼物</string>
+    <string name="seex_change_userhead">替换封面</string>
+    <string name="seex_test_ing">审核中</string>
+    <string name="seex_gift_check">已选择%1$s</string>
+</resources>

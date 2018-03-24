@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#EFEFF4"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <TextView
+            android:id="@+id/num_tip"
+            style="@style/text_white12"
+            android:background="@color/black_tran80"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_3"
+            android:visibility="gone"
+          />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/padding_20"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <com.chat.seecolove.widget.BigImageViewPageAlbum
+        android:id="@+id/bigImageViewPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:clickable="true"
+        android:visibility="gone" />
+</FrameLayout>

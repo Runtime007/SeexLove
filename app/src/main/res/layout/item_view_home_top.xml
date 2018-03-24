@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="@dimen/padding_20"
+        android:layout_marginRight="@dimen/padding_20"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/top_title"
+            style="@style/text_white20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginLeft="@dimen/padding_20"
+        android:layout_marginRight="@dimen/padding_20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_top_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_5"
+            android:src="@mipmap/icon_arrow_home_top" />
+    </LinearLayout>
+    <View
+        android:id="@+id/view_click"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

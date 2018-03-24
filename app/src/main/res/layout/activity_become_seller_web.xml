@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/toolbar"
+        android:progress="0"
+        android:progressDrawable="@drawable/seekbar_bg_web"
+        android:visibility="gone" />
+
+    <com.chat.seecolove.cuswebview.VideoEnabledWebView
+        android:id="@+id/webv_become_seller"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_protocol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/padding_23"
+        android:paddingTop="@dimen/padding_13"
+        android:text="@string/seex_action_settings" />
+
+    <Button
+        android:id="@+id/btn_become_seller"
+        style="@style/text_white16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_50"
+        android:background="@color/btn_pink"
+        android:gravity="center"
+        android:text="@string/seex_became_seller_apply_now" />
+
+</LinearLayout>

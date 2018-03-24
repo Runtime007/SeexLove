@@ -1,0 +1,244 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+<!--    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/bottom_bg"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Table_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/seex_pay_account" />
+
+        <LinearLayout
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|right"
+            android:clickable="true"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/pro_back" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/but_record"
+            style="@style/report_black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|right"
+            android:background="@null"
+            android:text="@string/seex_jiaoyi_code" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/app_bg_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_white14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/hint"
+                android:layout_marginTop="@dimen/padding_10"
+                android:layout_marginBottom="@dimen/padding_10"
+                android:textSize="14sp"
+                android:text="我的米粒：" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tx_balance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/hint"
+                    android:textSize="16sp" />
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@mipmap/rice"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_recharge_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_20"
+        android:paddingTop="@dimen/padding_7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding_15"
+            android:paddingRight="@dimen/padding_15">
+
+            <TextView
+                style="@style/info_more16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/padding_5"
+                android:text="请选择购买金额" />
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="right|center_vertical"-->
+                <!--android:orientation="horizontal">-->
+                <TextView
+                    style="@style/info_more16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textEnd"
+                    android:layout_gravity="end"
+                    android:id="@+id/tv_rules"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="@dimen/padding_5"
+                    android:text="首冲规则" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_recharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_5"
+                android:scrollbars="none" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="bottom"
+                android:layout_marginTop="@dimen/padding_10"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/codeEdit"
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/padding_10"
+                    android:layout_marginRight="@dimen/padding_10"
+                    android:background="@drawable/seex_green_box"
+                    android:gravity="center"
+                    android:hint="输入金额"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:textColorHint="@color/hint" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_nickname14"
+                    android:text=""
+                    android:id="@+id/king"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            style="@style/info_more16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_15"
+            android:layout_marginTop="21.5dp"
+            android:text="选择支付方式" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/text_white16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/btn_alipay"
+                android:padding="2dp"
+                android:src="@mipmap/zhifub_recharge"
+                android:background="@drawable/mine_recharge_item_nor"
+                />
+            <View
+                android:layout_width="19dp"
+                android:layout_height="1dp" />
+            <ImageView
+                style="@style/text_white16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/btn_wechat"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:background="@drawable/mine_recharge_item_nor"
+                android:src="@mipmap/wechat_recharge"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chat.seecolove.widget.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lin_gift_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/gift_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="@dimen/padding_10"
+            fresco:actualImageScaleType="centerInside"
+            fresco:placeholderImage="@color/page_bg" />
+
+        <TextView
+            android:id="@+id/gift_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="13sp" />
+    </LinearLayout>
+</com.chat.seecolove.widget.SquareLayout>

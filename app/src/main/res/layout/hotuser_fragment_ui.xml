@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    app:srlPrimaryColor="@color/white"
+    app:srlAccentColor="@color/qing_green"
+    app:srlEnablePreviewInEditMode="false">
+
+    <LinearLayout
+        android:id="@+id/CoordinatorLayout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout_home"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_gravity="bottom"
+            app:tabIndicatorColor="@color/qing_green"
+            app:tabIndicatorHeight="3dp"
+            app:tabMode="fixed"
+            android:visibility="gone"
+            app:tabSelectedTextColor="#595959"
+            android:paddingBottom="@dimen/padding_5"
+            app:tabTextAppearance="@style/Home_TabLayout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:overScrollMode="never"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/pullLoadMoreRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:overScrollMode="never" />
+
+
+        <TextView
+            android:id="@+id/no_data"
+            style="@style/setting_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="250dp"
+            android:drawablePadding="@dimen/padding_3"
+            android:drawableTop="@mipmap/no_data"
+            android:gravity="center"
+            android:text="@string/seex_no_data"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

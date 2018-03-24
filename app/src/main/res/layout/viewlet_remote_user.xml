@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/viewlet_remote_video_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+    <ImageView
+        android:id="@+id/view_small_blur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.9"
+        android:visibility="gone"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/remote_user_voice_container"
+        android:gravity="center_vertical"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/remote_user_voice_icon"
+            android:scaleType="centerInside"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

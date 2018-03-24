@@ -1,0 +1,197 @@
+apply plugin: 'com.android.application'
+
+android {
+    //修改生成的apk名字
+//    applicationVariants.all { variant ->
+//        variant.outputs.each { output ->
+//            def oldFile = output.outputFile
+//            if (variant.buildType.name.equals('release')) {
+//                def releaseApkName = 'seexchat-' + variant.productFlavors[0].name + '.apk'
+//                output.outputFile = new File(oldFile.parent, releaseApkName)
+//            }
+//            if (variant.buildType.name.equals('beta')) {
+//                newName = oldFile.name.replace(".apk", "-v" + defaultConfig.versionName + "-build" + getDate() + ".apk")
+//                output.outputFile = new File(oldFile.parent, newName)
+//            }
+//            if (variant.buildType.name.equals('debug')) {
+//
+//            }
+//        }
+//    }
+
+//    signingConfigs {
+//        release {
+//            storeFile file('seexchat.jks')
+//            storePassword '123456'
+//            keyAlias 'key0'
+//            keyPassword '123456'
+//        }
+//        debug {
+//            storeFile file('seexchat.jks')
+//            storePassword '123456'
+//            keyAlias 'key0'
+//            keyPassword '123456'
+//        }
+//    }
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+    sourceSets {
+        main {
+            jniLibs.srcDirs=['libs']
+        }
+    }
+
+//    externalNativeBuild {
+//        cmake {
+//            path 'CMakeLists.txt'
+//        }
+//    }
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.chat.seecolove"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 38
+        versionName "2.9.5"
+        ndk {
+            moduleName "jniLibs"
+            ldLibs "log", "z", "m"
+            abiFilters "armeabi", "armeabi-v7a", "x86"
+        }
+
+        multiDexEnabled true
+
+        renderscriptTargetApi 16
+        renderscriptSupportModeEnabled  true
+//        flavorDimensions "versionCode"
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+
+    }
+
+    aaptOptions{
+       cruncherEnabled = false
+       useNewCruncher = false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    productFlavors {
+        guan {
+            manifestPlaceholders = [CHANNEL_NAME: "13"]
+        }
+        xiaomistore {
+            manifestPlaceholders = [CHANNEL_NAME: "14"]
+        }
+        qh360 {
+            manifestPlaceholders = [CHANNEL_NAME: "30"]
+        }
+        baidu {
+            manifestPlaceholders = [CHANNEL_NAME: "31"]
+        }
+        wandoujia {
+            manifestPlaceholders = [CHANNEL_NAME: "32"]
+        }
+        huaweistore {
+            manifestPlaceholders = [CHANNEL_NAME: "33"]
+        }
+        yingyongbao {
+            manifestPlaceholders = [CHANNEL_NAME: "34"]
+        }
+        flyme {
+            manifestPlaceholders = [CHANNEL_NAME: "35"]
+        }
+        otherstroe {
+            manifestPlaceholders = [CHANNEL_NAME: "36"]
+        }
+        cp1 {
+            manifestPlaceholders = [CHANNEL_NAME: "15"]
+        }
+        cp2 {
+            manifestPlaceholders = [CHANNEL_NAME: "16"]
+        }
+    }
+
+}
+
+
+repositories {
+    flatDir {
+        dirs 'src/main/PREBUILT'
+    }
+    mavenCentral()
+    maven {
+        url 'https://maven.google.com'
+    }
+    maven { url 'https://jitpack.io' }
+}
+configurations.all {
+    resolutionStrategy {
+        force 'com.android.support:appcompat-v7:24.2.1'
+        force 'com.android.support:design:24.2.1'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile('io.socket:socket.io-client:0.8.2') {
+        exclude group: 'org.json', module: 'json'
+    }
+    //noinspection GradleCompatible
+    compile 'com.android.support:cardview-v7:25.0.0'
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile 'com.android.support:design:25.2.0'
+    compile 'com.android.support:support-v4:25.2.0'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.4'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.yqritc:recyclerview-flexibledivider:1.2.6'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.google.android.exoplayer:exoplayer:r1.5.7'
+    compile 'com.facebook.fresco:fresco:0.13.0'
+    compile(name: 'videoprp', ext: 'aar')
+    //compile(name: 'QuSdk-RC', ext: 'aar')
+    compile 'com.timehop.stickyheadersrecyclerview:library:0.4.3'
+    compile 'com.soundcloud.android:android-crop:1.0.1@aar'
+    compile 'me.relex:photodraweeview:1.1.2'
+    compile 'com.wang.avi:library:2.1.3'
+    compile 'com.isanwenyu.highlight:highlight:1.5.2'
+    compile 'org.adw.library:discrete-seekbar:1.0.1'
+    compile 'com.github.promeg:tinypinyin:1.0.0'
+    //compile 'com.mabeijianxi:small-video-record:1.2.0'
+    testCompile 'junit:junit:4.12'
+    compile project(':videoSDK')
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.chrisbanes.photoview:library:1.2.4'
+    compile files('libs/nim-basesdk-4.3.0.jar')
+    compile files('libs/nim-chatroom-4.3.0.jar')
+    compile files('libs/jcore-android-1.1.7.jar')
+    compile files('libs/jpush-android-3.0.9.jar')
+    compile files('libs/AMap_Location_V3.6.1_20171012.jar')
+    compile 'com.android.support:multidex:1.0.1'
+    compile files('libs/agora-rtc-sdk.jar')
+    compile files('libs/alipaySdk-20161129.jar')
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.1'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'com.githang:status-bar-compat:latest.integration'
+    compile files('libs/beecloud-2.7.1.jar')
+    compile 'com.plattysoft.leonids:LeonidsLib:1.3.1'
+    compile 'com.google.code.findbugs:jsr305:3.0.0'
+    // 'com.github.yangjie10930:EpMedia:v0.9.3'
+    compile 'com.mabeijianxi:small-video-record:1.2.2'
+    compile 'com.mabeijianxi:small-video-record2:2.0.3@aar'
+    compile 'com.github.yyued:SVGAPlayer-Android:2.1.1'
+}
+
+//获取时间戳
+def getDate() {
+    def date = new Date()
+    def formattedDate = date.format('yyyyMMddHHmm')
+    return formattedDate
+}
+

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/share_user_view_number"
+            android:layout_width="33dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="1"
+            android:textColor="#d2d2d2"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/share_user_icon"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_gravity="top"
+                fresco:actualImageScaleType="centerCrop"
+                fresco:placeholderImage="@color/white"
+                fresco:roundAsCircle="true"
+               />
+            <TextView
+                android:id="@+id/share_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="20dp"
+                android:text=""
+                android:textColor="#343434"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/share_user_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/share_user_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.40元"
+                android:textColor="#5fae18"
+                android:textSize="18sp"
+                android:visibility="gone"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="共邀请 "
+                    android:textColor="#cccccc"
+                    android:textSize="12sp"
+                />
+                <TextView
+                    android:id="@+id/share_user_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#FF8A8A"
+                    android:textSize="12sp"
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 人"
+                    android:textColor="#cccccc"
+                    android:textSize="12sp"
+                />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/line_tran40"/>
+</LinearLayout>

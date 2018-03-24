@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/friends_notify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_10"
+        android:paddingLeft="@dimen/padding_15"
+        android:paddingTop="@dimen/padding_10">
+
+        <com.chat.seecolove.widget.CircleImageView
+            android:id="@+id/new_friend_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/img_friends"
+            app:border_color="@color/transparent"/>
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/new_friend_icon"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_newFriends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_12"
+                android:maxLines="1"
+                android:text="@string/seex_new_friends"
+                android:textColor="@color/friend_edt_text"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_newFriends_describle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_newFriends"
+                android:layout_marginLeft="@dimen/padding_12"
+                android:maxLines="1"
+                android:text="@string/seex_new_friends_describle"
+                android:textColor="@color/gray_id"
+                android:textSize="@dimen/text_14"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_30"
+            android:src="@mipmap/icon_more"/>
+
+        <TextView
+            android:id="@+id/tv_new_friend_count"
+            style="@style/text_white9"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_10"
+            android:layout_toLeftOf="@id/iv_arrow"
+            android:background="@drawable/shape_circle_red"
+            android:gravity="center"
+            android:visibility="gone"
+            tools:text="1"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

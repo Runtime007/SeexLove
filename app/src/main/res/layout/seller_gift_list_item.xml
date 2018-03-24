@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/seller_gift_list_item_img"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:src="@mipmap/gift_prop_0"/>-->
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/seller_gift_list_item_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            fresco:actualImageScaleType="centerInside"
+            fresco:placeholderImage="@drawable/gift_prop_0" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/seller_gift_list_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_white9"
+            android:text="10元"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/seller_gift_list_item_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_yellow10"
+            android:text="x5"/>
+    </LinearLayout>
+
+    
+
+
+</LinearLayout>

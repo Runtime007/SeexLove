@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:visibility="gone"
+    android:clickable="true"
+    android:background="@color/transparent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent">
+        <LinearLayout
+            android:id="@+id/room_enjoy_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/room_dialog_bg"
+            android:orientation="vertical"
+            android:layout_margin="17dp"
+            android:padding="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/room_enjoy_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="选择打赏礼物"
+                        style="@style/edit_text15"/>
+                    <TextView
+                        android:id="@+id/room_enjoy_can_give_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seex_room_can_give_money"
+                        style="@style/text_gray12"/>
+
+                </LinearLayout>
+
+                <GridView
+                    android:id="@+id/room_enjoy_list"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchMode="columnWidth"
+                    android:horizontalSpacing="10dp"
+                    android:verticalSpacing="10dp"
+                    android:background="@color/light_bg"
+                    android:numColumns="3">
+
+                </GridView>
+
+            </LinearLayout>
+
+            <com.chat.seecolove.widget.CustomRoundAngleTextView
+                android:id="@+id/room_enjoy_button"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="44dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                fresco:round_width="5dp"
+                fresco:round_height="5dp"
+                fresco:top_left="true"
+                fresco:top_right="true"
+                fresco:bottom_left="true"
+                fresco:bottom_right="true"
+                android:background="@drawable/btn_bg_red"
+                android:text="赏了"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/room_enjoy_close"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@mipmap/room_dialog_close"
+            android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+</RelativeLayout>

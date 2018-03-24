@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+    <item
+        android:id="@+id/btn_rule"
+        android:orderInCategory="100"
+        android:title="积分规则"
+        android:textSize="15sp"
+        app:showAsAction="ifRoom" />
+</menu>

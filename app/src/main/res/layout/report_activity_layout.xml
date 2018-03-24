@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="可选择多项"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#9c9c9c"
+            />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="其他"
+                android:textSize="14sp"
+                android:textColor="#9c9c9c"
+                />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="20dp"
+                android:layout_marginTop="15dp"
+                android:hint="请尽可能详细描述您举报的内容，便于审核人员准确核查，需要大于十个汉字"
+                android:background="@drawable/chat_text_input_bg"
+                android:textColor="#464b51"
+                android:textSize="16sp"
+                android:textColorHint="#9c9c9c"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="20dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="上传相关截图（必填）"
+                android:textSize="14sp"
+                android:textColor="#9c9c9c"
+                />
+
+            
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bottom_bg"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/status_bar_fix"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/bottom_bg"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <TextView
+            style="@style/MyCustomTabSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/seex_friend" />
+
+        <FrameLayout
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/add" />
+
+            <ImageView
+                android:id="@+id/red_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:src="@drawable/red_point"
+                android:visibility="gone" />
+        </FrameLayout>
+    </FrameLayout>
+    <include layout="@layout/line_toolbar" />
+
+    <com.chat.seecolove.contactrecy.ClearEditText
+        android:id="@+id/filter_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:singleLine="true"
+        android:visibility="gone"
+        android:gravity="center"
+       />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="@color/list_name"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="35dp">
+            <ImageView
+                android:id="@+id/left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/padding_5"
+                android:layout_marginRight="@dimen/padding_10"
+                android:src="@mipmap/face"/>
+            <TextView
+                style="@style/text_white12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/left"
+                android:layout_centerVertical="true"/>
+            <ImageView
+                android:id="@+id/close_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_marginRight="@dimen/padding_10"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/close_tip"/>
+        </RelativeLayout>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/test_recycler_view_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/view_tip"
+            cube_ptr:ptr_duration_to_close="200"
+            cube_ptr:ptr_duration_to_close_header="700"
+            cube_ptr:ptr_keep_header_when_refresh="true"
+            cube_ptr:ptr_pull_to_fresh="false"
+            android:background="@color/app_buttom_bg_color"
+            cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+            cube_ptr:ptr_resistance="1.8">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        <TextView
+            android:id="@+id/noResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_30"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:text="没有搜索到相应结果"
+            />
+        <TextView
+            android:id="@+id/anno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="40sp"
+            android:textColor="@color/title_bg"
+          android:layout_centerInParent="true"
+            />
+        <com.chat.seecolove.contactrecy.SideBar
+            android:id="@+id/sideBar"
+            android:layout_width="30dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="@dimen/padding_30"
+            android:layout_alignParentRight="true" />
+        <TextView
+            android:id="@+id/no_data"
+            style="@style/setting_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="@dimen/padding_3"
+            android:drawableTop="@mipmap/no_data"
+            android:gravity="center"
+            android:text="@string/seex_no_friend"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

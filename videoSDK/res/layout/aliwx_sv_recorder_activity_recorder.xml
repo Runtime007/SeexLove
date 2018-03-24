@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/view_dialog"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            layout="@layout/taorecorder_uik_circular_progress" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:background="#fff" >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_video_return_sm" />
+
+            <ImageView
+                android:id="@+id/iv_light"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="48dp"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:layout_centerVertical="true"
+                android:src="@drawable/aliwx_sv_wx_shiny_nor" />
+
+            <ImageView
+                android:id="@+id/iv_camerarotate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerInside"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:src="@drawable/aliwx_sv_wx_camera_nor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/taorecorder_reocordtitle"
+                android:textColor="#454A51"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textView" />
+
+
+        </RelativeLayout>
+
+        <com.taobao.av.ui.view.SquareFrameLayout
+            android:id="@+id/camera_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <SurfaceView
+                android:id="@+id/camera_view_1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <ImageView
+                android:id="@+id/iv_notice_recordlimit"
+                android:layout_width="110dp"
+                android:layout_height="36dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/taorecorder_nitification_recordlimit"
+                android:visibility="invisible"
+                />
+            <!--<TextView-->
+            <!--android:id="@+id/iv_notice_recordlimit"-->
+            <!--android:layout_width="88dp"-->
+            <!--android:layout_height="36dp"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:text="至少录到这里哦"-->
+            <!--android:visibility="invisible" />-->
+
+        </com.taobao.av.ui.view.SquareFrameLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            layout="@layout/aliwx_sv_recorder_timeline" />
+
+        <RelativeLayout
+            android:id="@+id/rl_recorder_controller"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#fff" >
+
+            <CheckBox
+                android:id="@+id/btn_delete_last_clip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="26dp"
+                android:text="删除"
+                android:textColor="#9c9c9c"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:button="@null"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iv_Recorderbg"
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/aliwx_sv_recorder_ovalbg_stroke"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/iv_Recorder"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/greenyuan"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/iv_Recorder_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="按住录"
+                android:textColor="#ffffff"
+                android:textSize="17sp"/>
+
+            <CheckBox
+                android:id="@+id/iv_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="26dp"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="确定"
+                android:textColor="#9c9c9c"
+                android:textSize="17sp"
+                android:button="@null"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_recordtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/taorecorder_recordtime"
+                    android:background="@drawable/aliwx_sv_record_time_border"
+                    android:textColor="#ff8a8a"
+                    android:textSize="12sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#9c9c9c"
+                    android:textSize="12sp"
+                    android:text="秒"
+                    />
+            </LinearLayout>
+
+            <!--android:background="@drawable/taorecorder_rectbg_time"-->
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

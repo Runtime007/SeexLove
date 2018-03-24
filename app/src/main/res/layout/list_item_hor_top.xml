@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.drawee.view.SimpleDraweeView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/user_icon"
+    fresco:actualImageScaleType="centerCrop"
+    fresco:placeholderImage="@color/white"
+    fresco:roundAsCircle="true"
+    fresco:roundingBorderWidth="1dp"
+    fresco:roundingBorderColor="@color/white"
+    android:clickable="false"
+    android:layout_width="34dp"
+    android:layout_height="34dp" />

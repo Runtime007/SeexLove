@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+    <!--<include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />-->
+    <RelativeLayout
+        android:id="@+id/customtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/bottom_bg"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Table_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="分享赚钱" />
+
+        <LinearLayout
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|right"
+            android:clickable="true"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/pro_back" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/rule"
+            style="@style/report_black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|right"
+            android:background="@null"
+            android:text="规则" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/customtoolbar"
+        android:layout_marginBottom="50dp"
+    android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/nonVideoLayout"
+            android:layout_below="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.chat.seecolove.cuswebview.VideoEnabledWebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/videoLayout"
+            android:layout_below="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <!-- View that will be shown while the fullscreen video loads (maybe include a spinner and a "Loading..." message) -->
+            <View
+                android:id="@+id/videoLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/do_share"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="#FFDB50"
+            android:textStyle="bold"
+            style="@style/text_black18"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:height="50dp" android:text="分享赚钱"/>
+</LinearLayout>
+
+</RelativeLayout>

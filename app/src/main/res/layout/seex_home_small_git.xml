@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.chat.seecolove.widget.BubbleView
+        android:id="@+id/bubble"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/smallgifttag"
+        android:layout_above="@+id/small"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="180dp"
+        android:layout_marginRight="@dimen/padding_20"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/small"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+</RelativeLayout>

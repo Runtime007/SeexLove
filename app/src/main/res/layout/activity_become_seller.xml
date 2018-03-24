@@ -1,0 +1,278 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:background="#909ff0"
+    android:orientation="vertical">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#909ff0"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/padding_20"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/icon"
+                    android:layout_width="120dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="120dp"
+                    fresco:backgroundImage="@mipmap/xikemimi"
+                    fresco:actualImageScaleType="centerCrop"
+                    fresco:roundAsCircle="true"
+                    android:layout_marginBottom="@dimen/padding_20"
+                    fresco:roundedCornerRadius="4dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/work"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/padding_20"
+                android:layout_marginLeft="@dimen/padding_20"
+                android:hint="选择职业"
+                android:layout_marginTop="30dp"
+                android:textColorHint="@color/hint"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:background="@drawable/edit_crecel_bg" />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/padding_20"
+                android:layout_marginLeft="@dimen/padding_20"
+                android:layout_marginTop="@dimen/padding_30"
+                android:hint="年龄：20(不可修改)"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint"
+                android:inputType="number"
+                android:background="@drawable/edit_crecel_bg" />
+
+
+            <Button
+                android:id="@+id/btn"
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/seex_but_bg"
+                android:text="下一步"
+                />
+        </LinearLayout>-->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/dialog_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/t1"
+                    android:background="@color/hint"></View>
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/seex_video_vip"
+                    android:textColor="#2de2c5"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/t1"
+                    android:background="@color/hint"></View>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/seex_video_info"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/t2"
+                    android:background="@color/hint"></View>
+
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/seex_video_auth_case"
+                    android:textColor="#2de2c5"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/t2"
+                    android:background="@color/hint"></View>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="25dp"
+                android:id="@+id/tip1"
+                android:text="@string/seex_video_auth_case_info"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/t3"
+                    android:background="@color/hint"></View>
+
+                <TextView
+                    android:id="@+id/t3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/seex_video_add_wx_title"
+                    android:textColor="#2de2c5"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/t3"
+                    android:background="@color/hint"></View>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="@string/seex_video_wx_tip"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="22dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="98dp"
+                    android:layout_height="34dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:background="@drawable/auth_video_right_bg"
+                    android:text="@string/seex_wx_nmb" />
+
+                <TextView
+                    android:layout_width="98dp"
+                    android:layout_height="34dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:id="@+id/copy_right"
+                    android:background="@drawable/auth_video_left_bg"
+                    android:text="@string/seex_onclick_copy" />
+            </LinearLayout>
+
+        </LinearLayout>
+    <Button
+        android:layout_width="198dp"
+        android:layout_height="44dp"
+        android:id="@+id/btn"
+        android:background="@drawable/auth_start_video_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="21dp"
+        android:text="@string/seex_start_video"/>
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+</RelativeLayout>

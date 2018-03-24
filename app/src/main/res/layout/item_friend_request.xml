@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/padding_10"
+    android:paddingLeft="@dimen/padding_12"
+    android:paddingRight="@dimen/padding_12"
+    android:paddingTop="@dimen/padding_10">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_photo"
+        android:layout_width="@dimen/friend_avator_size"
+        android:layout_height="@dimen/friend_avator_size"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        app:actualImageScaleType="centerCrop"
+        app:placeholderImage="@color/white"
+        app:roundAsCircle="true"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_12"
+        android:layout_toRightOf="@id/sdv_photo"
+        android:textColor="@color/friend_edt_text"
+        android:textSize="@dimen/friend_text"
+        tools:text="@string/seex_action_settings"/>
+
+    <TextView
+        android:id="@+id/tv_describle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginLeft="@dimen/padding_12"
+        android:layout_toRightOf="@id/sdv_photo"
+        android:textColor="@color/gray_id"
+        android:textSize="@dimen/friend_describle_text"
+        tools:text="@string/seex_action_settings"/>
+
+    <TextView
+        android:id="@+id/btn_agree"
+        android:layout_width="@dimen/padding_60"
+        android:layout_height="@dimen/padding_30"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/shape_white_gray"
+        android:gravity="center"
+        android:textColor="@color/friend_btn_agree"
+        android:textSize="@dimen/friend_describle_text"
+        android:visibility="gone"
+        android:text="@string/seex_mail_friend_req_agree"/>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/friend_text_have_agree"
+        android:text="@string/seex_mail_friend_req_add"
+        android:visibility="gone"
+        android:textSize="@dimen/friend_describle_text"/>
+</RelativeLayout>

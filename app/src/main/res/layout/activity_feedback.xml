@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <EditText
+        android:id="@+id/edit_tx"
+        style="@style/text_more16"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/padding_10"
+        android:paddingBottom="@dimen/padding_10"
+        android:gravity="left"
+        android:textColorHint="@color/tab_nor"
+        android:hint="请输入您需要反馈的问题（200字内）"
+        android:maxLength="200"
+       />
+    <include layout="@layout/line_hor_mar_left_right" />
+    <TextView
+        style="@style/red_tip12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+      android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="@string/seex_feedback_tip"/>
+</LinearLayout>

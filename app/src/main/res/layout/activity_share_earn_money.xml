@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_share_earn_money"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="94dp"
+                android:layout_marginRight="84dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_15"
+                android:layout_marginRight="@dimen/padding_15"
+                android:background="@drawable/home_top_bg"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_15"
+                    android:layout_marginLeft="@dimen/padding_22"
+                    android:layout_marginTop="@dimen/padding_17"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/text_white14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seex_share_earn_money_invite_total" />
+
+                    <TextView
+                        android:id="@+id/tv_invent_num"
+                        style="@style/text_white40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="@string/seex_action_settings" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/share_earn_money_divider" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_15"
+                    android:layout_marginLeft="@dimen/padding_22"
+                    android:layout_marginTop="@dimen/padding_17"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_award"
+                        style="@style/text_white14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seex_share_earn_money_award_total" />
+
+                    <TextView
+                        android:id="@+id/tv_award_num"
+                        style="@style/text_white40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@id/tv_award"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="0.00" />
+
+                    <TextView
+                        android:id="@+id/tv_unit"
+                        style="@style/text_white18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/tv_award_num"
+                        android:layout_below="@id/tv_award"
+                        android:layout_marginLeft="@dimen/padding_3"
+                        android:layout_toRightOf="@id/tv_award_num"
+                        android:text="@string/seex_share_money_award_unit" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_look_award"
+                style="@style/text_award_16"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_38"
+                android:layout_marginBottom="@dimen/padding_20"
+                android:layout_marginLeft="@dimen/look_award_margin"
+                android:layout_marginRight="@dimen/look_award_margin"
+                android:layout_marginTop="@dimen/padding_20"
+                android:background="@drawable/share_earn_money_look_btn_bg"
+                android:gravity="center"
+                android:text="@string/seex_share_earn_money_look_award" />
+
+            <com.chat.seecolove.widget.recycleview.EmptyRecyclerView
+                android:id="@+id/rclv_award"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_15"
+                android:paddingRight="@dimen/padding_15" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btn_go_share"
+        style="@style/text_white16"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/become_seller_green"
+        android:text="@string/seex_share_earn_money_go_share" />
+
+</LinearLayout>

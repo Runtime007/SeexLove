@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 手机 -->
+    <LinearLayout
+        android:id="@+id/view_reg_fir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_22"
+            android:layout_marginRight="@dimen/padding_22"
+            android:layout_marginTop="@dimen/padding_10"
+            android:hint="@string/seex_reg_phone_hint">
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="11" />
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <!-- 注册 、登录 -->
+    <LinearLayout
+        android:id="@+id/view_reg_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <FrameLayout
+            android:id="@+id/view_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_22"
+            android:layout_marginRight="@dimen/padding_22"
+            android:layout_marginTop="@dimen/padding_10"
+           >
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/seex_reg_code_hint">
+
+
+                <EditText
+                    android:id="@+id/codeEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:maxLength="6" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/code_text"
+                style="@style/text_yellow15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginBottom="-5dp"
+                android:layout_marginRight="@dimen/padding_5"
+                android:text="重新发送"
+                android:visibility="visible" />
+
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/view_agreenment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_22"
+            android:layout_marginBottom="@dimen/padding_7"
+            android:gravity="center"
+            android:padding="@dimen/padding_5"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/check"/>
+
+            <TextView
+                android:id="@+id/text_agr"
+                style="@style/text_yellow10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_3"
+                android:text=""
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

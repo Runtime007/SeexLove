@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/view_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_6"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/bg_recharge_mine_item">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/padding_2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/tv_recharge_money"
+                style="@style/text_setting16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="10" android:layout_marginBottom="5dp"/>
+
+            <TextView
+                style="@style/gray_id12"
+                android:id="@+id/king"
+                android:maxLines="1"
+                android:layout_alignBaseline="@+id/tv_recharge_money"
+                android:layout_toRightOf="@+id/tv_recharge_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:drawableRight="@mipmap/rice"
+                android:text="元"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_icon_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:src="@mipmap/icon_selected_room"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_give_money"
+        style="@style/text_white10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/recharge_give_bg"
+        android:paddingBottom="@dimen/padding_1"
+        android:paddingLeft="@dimen/padding_7"
+        android:paddingRight="@dimen/padding_7"
+        android:paddingTop="@dimen/padding_1"
+        android:text="12345"
+        android:visibility="gone"/>
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="首冲"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:id="@+id/flagview"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/padding_2"
+        android:background="@drawable/seex_red_bg"/>
+
+</RelativeLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#676767"
+            android:textSize="16sp"
+            android:text="真实姓名"/>
+        <EditText
+            android:id="@+id/share_and_award_withdraw_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:background="@color/transparent"
+            android:textColor="#000000"
+            android:textColorHint="#ababab"
+            android:hint="填写您的真实姓名"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20dp"
+        android:background="#d8d8d8"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#676767"
+            android:textSize="16sp"
+            android:text="支付宝"/>
+        <EditText
+            android:id="@+id/share_and_award_withdraw_alipay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:background="@color/transparent"
+            android:textColor="#000000"
+            android:textColorHint="#ababab"
+            android:hint="请输入支付宝帐号"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20dp"
+        android:background="#d8d8d8"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#676767"
+            android:textSize="16sp"
+            android:text="手机号"/>
+        <EditText
+            android:id="@+id/share_and_award_withdraw_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:background="@color/transparent"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textColor="#000000"
+            android:textColorHint="#ababab"
+            android:hint="填写您的手机号码"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20dp"
+        android:background="#d8d8d8"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="1. 提现金额由平台审核后，直接转入您的支付宝；"/>
+    <TextView
+        android:id="@+id/share_and_award_guizhe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/seex_share_and_award_guizhe"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="3. 预计3~5个工作日到账。"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        >
+
+        <TextView
+            android:id="@+id/share_and_award_withdraw_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="@drawable/btn_green"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="发起提现申请"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

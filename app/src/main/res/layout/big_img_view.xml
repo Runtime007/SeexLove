@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <com.chat.seecolove.widget.ViewPagerFixed
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/img_index"
+        style="@style/text_white12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toast_bg_trans"
+        android:paddingTop="@dimen/padding_3"
+        android:paddingBottom="@dimen/padding_3"
+        android:paddingLeft="@dimen/padding_5"
+        android:paddingRight="@dimen/padding_5"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/padding_20"
+        android:orientation="horizontal" />
+</FrameLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/padding_10"
+    android:paddingRight="@dimen/padding_22"
+    android:paddingTop="@dimen/padding_10"
+    android:paddingBottom="@dimen/padding_22"
+    android:orientation="horizontal">
+
+   <com.chat.seecolove.widget.SeexSeekBar
+       android:id="@+id/seekBar"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:progressDrawable="@drawable/seekbar_bg_download"
+       android:thumb="@drawable/point_yellow"
+       android:thumbOffset="@dimen/padding_5"
+       android:maxHeight="1dp"
+       android:minHeight="1dp"
+       android:layout_weight="1"
+       android:max="100"
+       android:progress="0"/>
+    <TextView
+        android:id="@+id/progress_text"
+        style="@style/text_black15"
+        android:text="0%"
+        android:layout_marginLeft="@dimen/padding_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

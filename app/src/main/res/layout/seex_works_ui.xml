@@ -1,0 +1,105 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/text_more16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding_20"
+                    android:layout_marginLeft="@dimen/padding_20"
+                    android:layout_marginTop="@dimen/padding_20"
+                    android:layout_marginBottom="@dimen/padding_20"
+                    android:id="@+id/tipView"
+                    android:text="选择爱好" />
+                <com.chat.seecolove.widget.SeexGridView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="3"
+                    android:layout_marginTop="@dimen/padding_10"
+                    android:scrollbars="vertical" />
+                <TextView
+                    style="@style/text_more16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding_20"
+                    android:layout_marginLeft="@dimen/padding_20"
+                    android:layout_marginTop="@dimen/padding_20"
+                    android:visibility="gone"
+                    android:layout_marginBottom="@dimen/padding_20"
+                    android:text="自定义" />
+
+                <EditText
+                    android:id="@+id/codeEdit"
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:visibility="gone"
+                    android:textColorHint="@color/hint"
+                    android:layout_marginRight="@dimen/padding_20"
+                    android:layout_marginLeft="@dimen/padding_20"
+                    android:background="@drawable/edit_crecel_bg"
+                    android:maxLength="6" />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/seex_but_bg"
+                    android:textSize="@dimen/padding_18"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:id="@+id/btn"
+                    android:layout_marginTop="@dimen/padding_30"
+                    android:layout_marginRight="@dimen/padding_20"
+                    android:layout_marginLeft="@dimen/padding_20"
+                    android:layout_marginBottom="@dimen/padding_10"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:text="确定"/>
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </ScrollView>
+    </RelativeLayout>
+
+
+</LinearLayout>

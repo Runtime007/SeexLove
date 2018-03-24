@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:paddingBottom="11dp"
+    android:paddingLeft="@dimen/padding_12"
+    android:paddingRight="@dimen/padding_5"
+    android:paddingTop="@dimen/padding_10">
+
+
+    <FrameLayout
+        android:id="@+id/view_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/user_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImage="@color/white"
+            android:clickable="true"
+            fresco:roundAsCircle="true" />
+
+        <ImageView
+            android:id="@+id/img_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginLeft="@dimen/padding_18"
+            android:src="@drawable/status_ovel_gray_cir" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/view_head"
+        android:layout_marginLeft="@dimen/padding_12"
+        android:layout_marginTop="3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/username"
+            style="@style/text_setting16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginBottom="5dp"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            >
+            <ImageView
+                android:id="@+id/call_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                />
+            <TextView
+                android:id="@+id/call_status_str"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_call_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/padding_11"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/date"
+            style="@style/info_more14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            />
+        <TextView
+            android:id="@+id/call_status_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="" />
+
+    </LinearLayout>
+</RelativeLayout>

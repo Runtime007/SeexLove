@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_15"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/padding_15"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/edit_text15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可用余额" />
+
+        <TextView
+            android:id="@+id/text_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:textColor="#f83b5f"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <include layout="@layout/line_hor_mar_left_right" />
+    <RelativeLayout
+        android:id="@+id/view_card_info"
+        style="@style/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/card_num"
+            style="@style/edit_text14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/line_hor_mar_left_right" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/padding_10">
+
+        <ImageView
+            android:id="@+id/help_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/help" />
+
+        <TextView
+            android:id="@+id/tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_5"
+            android:layout_toRightOf="@+id/help_icon"
+            android:text="@string/seex_tip"
+            android:textColor="#717070"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/edit_money"
+        style="@style/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_20"
+        android:gravity="left"
+        android:hint="输入提现金额"
+        android:inputType="number"
+        android:maxLength="18"
+        android:visibility="gone"
+        android:singleLine="true" />
+
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/padding_27"
+        android:text="@string/seex_advance" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_10"
+        android:layout_marginLeft="@dimen/padding_22"
+        android:layout_marginRight="@dimen/padding_22"
+        android:layout_toRightOf="@+id/help_icon"
+        android:text="提现说明：提现金额不可低于100元，每周一可以进行提现，每一笔提现收1.5元手续费
+        \n(为了您的资金账户安全，如需更换银行卡，余额必须为0)"
+        android:textColor="#f83b5f"
+        android:textSize="11sp" />
+</LinearLayout>

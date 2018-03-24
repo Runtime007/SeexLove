@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.chat.seecolove.widget.ChatSendgLayout
+                    android:id="@+id/chat_send_msg_img_bg"
+                    android:layout_width="164dp"
+                    android:layout_height="154dp"
+                    android:background="#ff8a8a"
+                    fresco:round_width="5dp"
+                    fresco:round_height="5dp"
+                    fresco:top_left="true"
+                    fresco:top_right="true"
+                    fresco:bottom_left="true"
+                    fresco:bottom_right="true"
+                    android:orientation="vertical">
+
+
+
+                    <!--android:background="#ff8a8a"-->
+                </com.chat.seecolove.widget.ChatSendgLayout>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/chat_send_msg_img"
+                android:layout_centerVertical="true"
+                fresco:actualImageScaleType="centerCrop"
+                fresco:placeholderImage="@color/white"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="2dp"
+                fresco:roundedCornerRadius="5dp"
+                fresco:roundTopLeft="true"
+                fresco:roundBottomLeft="true"
+                fresco:roundTopRight="true"
+                fresco:roundBottomRight="true"
+                fresco:roundAsCircle="false" />
+
+                <com.chat.seecolove.widget.RoundFileProgressBar
+                    android:id="@+id/chat_send_img_bar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    android_custom:roundColor="#80FF8A8A"
+                    android_custom:roundProgressColor="#ffffff"
+                    android_custom:textColor="#ffffff"
+                    android_custom:textIsDisplayable="true"
+                    android_custom:roundWidth="2dip"
+                    android_custom:textSize="8sp"/>
+        </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:foreground="?android:attr/selectableItemBackground"
+    card:cardBackgroundColor="@color/white"
+    card:cardCornerRadius="3dp"
+    card:cardElevation="2dp"
+    card:cardPreventCornerOverlap="false"
+    card:cardMaxElevation="@dimen/cardview_default_elevation">
+    <!--cardMaxElevation：最大卡片阴影的宽度-->
+    <!--cardElevation:卡片阴影的宽度-->
+    <!--cardBackgroundColor:卡片的背景颜色-->
+    <!--cardCornerRadius ：卡片的圆角半径-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/user_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                fresco:actualImageScaleType="centerCrop"
+                fresco:placeholderImage="@color/white"
+                fresco:roundedCornerRadius="3dp"
+                fresco:roundTopLeft="true"
+                fresco:roundBottomLeft="true"
+                fresco:roundTopRight="false"
+                fresco:roundBottomRight="false"
+                fresco:roundAsCircle="false" />
+            <TextView
+                android:id="@+id/answerPercent"
+                style="@style/text_white10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:background="@mipmap/icon_qnswering_rate"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical|right"
+                android:paddingRight="5dp" />
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/username"
+                    style="@style/text_name15"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:ellipsize="end"
+                    android:text=""
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_marginTop="10dp"
+                    style="@style/text_white9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_item_price_bg"
+                    android:gravity="center_vertical"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingRight="@dimen/padding_5"
+                    android:paddingLeft="@dimen/padding_5" />
+                <TextView
+                    android:id="@+id/list_item_introduce"
+                    android:layout_marginTop="10dp"
+                    style="@style/gray_id12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/seex_de_intro"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:layout_weight="0"
+                android:layout_marginBottom="5dp"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|left">
+
+                    <ImageView
+                        android:id="@+id/list_item_video_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/btn_video_off_line"
+                        android:scaleType="centerCrop"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|right">
+
+                    <ImageView
+                        android:id="@+id/list_item_im_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/btn_message"
+                        android:scaleType="centerCrop"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

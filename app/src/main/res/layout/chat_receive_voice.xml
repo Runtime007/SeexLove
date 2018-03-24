@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.chat.seecolove.widget.ChatReceivegLayout
+                android:id="@+id/chat_receive_msg_voice_view_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/chat_item_height"
+                android:orientation="horizontal"
+                android:background="#ffffff"
+                fresco:round_width="5dp"
+                fresco:round_height="5dp"
+                fresco:top_left="true"
+                fresco:top_right="true"
+                fresco:bottom_left="true"
+                fresco:bottom_right="true"
+                android:gravity="center_vertical"
+                android:minWidth="100dp">
+                </com.chat.seecolove.widget.ChatReceivegLayout>
+
+            <LinearLayout
+                android:id="@+id/chat_receive_msg_voice_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/chat_item_height"
+                android:orientation="horizontal"
+                android:background="#00ffffff"
+                android:gravity="center_vertical"
+                android:minWidth="100dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/chat_receive_msg_voice_icon"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:scaleType="centerInside"
+                            android:layout_marginLeft="20dp"
+                            android:src="@mipmap/receive_message_voice_a3"
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        >
+
+                        <TextView
+                            android:id="@+id/chat_receive_msg_voice_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:textColor="#464b51"
+                            android:textSize="14sp"
+                            android:text="22'"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <com.chat.seecolove.widget.CustomRoundAngleTextView
+                    android:id="@+id/chat_receive_msg_voice_unreding"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:background="#ff0000"
+                    fresco:round_width="3dp"
+                    fresco:round_height="3dp"
+                    fresco:top_left="true"
+                    fresco:top_right="true"
+                    fresco:bottom_left="true"
+                    fresco:bottom_right="true"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:visibility="invisible"
+                    android:layout_weight="0"
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+<!--
+        <com.chat.seecolove.widget.RoundProgressBar
+            android:id="@+id/chat_receive_msg_voice_bar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android_custom:roundColor="#ffffff"
+            android_custom:roundProgressColor="#69a5eb"
+            android_custom:textColor="#69a5eb"
+            android_custom:textIsDisplayable="true"
+            android_custom:roundWidth="2dip"
+
+            android:layout_gravity="center_vertical"
+            android_custom:textSize="8sp"/>
+            -->
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <!-- 手机 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="number"
+                android:layout_marginLeft="@dimen/padding_22"
+                android:layout_marginRight="@dimen/padding_22"
+                android:hint="@string/seex_reg_phone_hint"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColorHint="@color/hint"
+                android:background="@drawable/edit_crecel_bg"
+                android:maxLength="11" />
+        </LinearLayout>
+
+        <!-- 注册 、登录 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/padding_22"
+            android:layout_marginRight="@dimen/padding_22"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/padding_20">
+            <EditText
+                android:id="@+id/wechatEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:hint="请输入微信号"
+                android:inputType="text"
+                android:textColorHint="@color/hint"
+                android:background="@drawable/edit_crecel_bg"
+                android:maxLength="20" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_20"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <EditText
+                android:id="@+id/qq_phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="text"
+                android:layout_marginLeft="@dimen/padding_22"
+                android:layout_marginRight="@dimen/padding_22"
+                android:hint="请输入QQ号"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColorHint="@color/hint"
+                android:background="@drawable/edit_crecel_bg"
+                android:maxLength="20" />
+        </LinearLayout>
+
+
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/seex_but_bg"
+            android:textSize="@dimen/padding_18"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@+id/ok"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="提交"/>
+    </LinearLayout>
+</LinearLayout>

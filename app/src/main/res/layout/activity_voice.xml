@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/room_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/voice_bg">
+
+
+    <LinearLayout
+        android:id="@+id/down_time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/padding_10"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/down_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11"
+            android:textColor="@color/title_bg"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/down_time_price"
+            style="@style/text_white15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_15"
+            android:text="计费倒计时" />
+    </LinearLayout>
+
+    <com.chat.seecolove.widget.SeexSmallGift
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/smallgift">
+    </com.chat.seecolove.widget.SeexSmallGift>
+
+    <com.chat.seecolove.widget.SeexVoiceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/seexchatview">
+    </com.chat.seecolove.widget.SeexVoiceView>
+
+    <com.chat.seecolove.widget.SeexVoiceDisGiftView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/seexdisgifview"/>
+    <include
+        android:id="@+id/room_pornographic_view"
+        layout="@layout/room_pornographic" />
+
+    <!--充值结果 -->
+    <include
+        android:id="@+id/view_recharge_succ"
+        layout="@layout/popu_room_recharge_succ" />
+
+    <include
+        android:id="@+id/view_recharge_fail"
+        layout="@layout/popu_room_recharge_fail" />
+
+    <!--举报列表-->
+    <include
+        android:id="@+id/report_layout"
+        layout="@layout/room_report_layout" />
+    <!--时间-->
+
+    <FrameLayout
+        android:id="@+id/custom_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:id="@+id/wrapper_session_stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seex_room_comnition_bg"
+                android:gravity="center|left"
+                android:layout_marginTop="70dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/stat_time"
+                    style="@style/text_white12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_10"
+                    android:layout_marginRight="@dimen/padding_10"
+                    android:text="00:00" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/used_money"
+                style="@style/text_white12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:background="@drawable/black_text_bg"
+                android:drawablePadding="@dimen/padding_5"
+                android:visibility="gone"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/used_money_reward"
+                style="@style/text_white12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:background="@drawable/black_text_bg"
+                android:drawablePadding="@dimen/padding_5"
+                android:minEms="3"
+                android:text="0.00" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/chat_ic_warning"
+                android:layout_marginTop="@dimen/padding_5"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/no_monye_tip"/>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <!-- 拨号 测试隐藏-->
+    <RelativeLayout
+        android:id="@+id/view_call"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                fresco:actualImageScaleType="centerCrop"
+                fresco:roundAsCircle="true"
+                android:id="@+id/incall_icon"
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:layout_marginTop="30dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="正在呼叫对方"
+                android:id="@+id/nickname"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/call_tip"
+                android:text="正在等待对方接受语音邀请"
+                android:textColor="@color/white" />
+
+            <TextView
+                style="@style/text_white18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_20"
+                android:text=""
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/isCalling_text"
+                style="@style/text_white12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/tv_call_price"
+                android:gravity="center"
+                android:padding="@dimen/padding_3"
+                android:text=""
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/text_tip"
+                style="@style/text_white12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="34dp"
+                android:layout_marginLeft="49dp"
+                android:layout_marginRight="49dp"
+                android:layout_marginTop="60dp"
+                android:drawablePadding="@dimen/activity_horizontal_margin"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:padding="@dimen/padding_7"
+                android:text="@string/seex_tip_text" />
+
+            <TextView
+                style="@style/text_white12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/price_tip"
+                style="@style/text_white18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/padding_5"
+                android:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/btn_cancle_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/seex_call_hangup" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_10"
+                    android:textColor="@color/white"
+                    android:text="挂断"/>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            android:id="@+id/btn_agree_call_layout"
+            android:layout_marginLeft="50dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btn_agree_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/seex_incall_bg"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_10"
+                android:textColor="@color/white"
+                android:text="接听"/>
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+    <include
+        android:id="@+id/general_layout"
+        layout="@layout/general_dialog_layout"
+        />
+
+    <ImageView
+        android:id="@+id/room_enjoy_imgs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gift_prop_0"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/room_anim_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        android:layout_marginBottom="200dp"
+        android:layout_marginTop="180dp"
+        android:gravity="top">
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/gift_anim_view"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+    </RelativeLayout>
+</RelativeLayout>
