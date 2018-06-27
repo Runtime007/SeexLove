@@ -1147,14 +1147,14 @@ public class MainActivity extends SeexBaseActivity implements View.OnClickListen
                         dialog.setCancelable(false);
                         dialog.show();
                         Button negativeButton = dialog.getButton(AlertDialog.BUTTON_NEGATIVE);
-
-                        if (status.equals("1")) {//选择更新
-                            dialog.setCancelable(true);
-                            negativeButton.setVisibility(View.VISIBLE);
-                        } else if (status.equals("2")) {//强制更新
-                            dialog.setCancelable(false);
-                            negativeButton.setVisibility(View.GONE);
-                        }
+                        negativeButton.setVisibility(View.VISIBLE);
+//                        if (status.equals("1")) {//选择更新
+//                            dialog.setCancelable(true);
+//                            negativeButton.setVisibility(View.VISIBLE);
+//                        } else if (status.equals("2")) {//强制更新
+//                            dialog.setCancelable(false);
+//                            negativeButton.setVisibility(View.GONE);
+//                        }
 
                     } catch (JSONException e) {
 

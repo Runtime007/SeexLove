@@ -202,7 +202,9 @@ public class Constants {
     public static final int AnchorTag =1;
     public static int ROOM_ID = 88;
 
-     /** * 正式---公网 **/
+    public static String testUrl = "http://47.92.116.238:8725";
+
+//     /** * 正式---公网 **/
     public String SOCKET = SharedPreferencesUtils.get(MyApplication.getContext(), "SOCKET", "http://36.255.223.213:9092") + "";
     public String BaseURL = SharedPreferencesUtils.get(MyApplication.getContext(), "BaseURL", "http://api.seecolove.com/") + "";
     public String URL = SharedPreferencesUtils.get(MyApplication.getContext(), "URL", "http://api.seecolove.com/match/user/") + "";
@@ -218,6 +220,13 @@ public class Constants {
 //    public String MATCHURL = SharedPreferencesUtils.get(MyApplication.getContext(), "MATCHURL", "http://106.75.104.68:8725/match/") + "";
 //    public String NEW_MATCHURL = SharedPreferencesUtils.get(MyApplication.getContext(), "NEW_MATCHURL", "http://106.75.104.68:8725/mapper/") + "";
 //    public String ORDER = SharedPreferencesUtils.get(MyApplication.getContext(), "ORDER", "http://106.75.104.68:8725/") + "";
+
+//    public String SOCKET = SharedPreferencesUtils.get(MyApplication.getContext(), "SOCKET", "http://106.75.104.68:9092") + "";
+//    public String BaseURL = SharedPreferencesUtils.get(MyApplication.getContext(), "BaseURL", testUrl+"/") + "";
+//    public String URL = SharedPreferencesUtils.get(MyApplication.getContext(), "URL", testUrl+"/match/user/") + "";
+//    public String MATCHURL = SharedPreferencesUtils.get(MyApplication.getContext(), "MATCHURL", testUrl+"/match/") + "";
+//    public String NEW_MATCHURL = SharedPreferencesUtils.get(MyApplication.getContext(), "NEW_MATCHURL", testUrl+"/mapper/") + "";
+//    public String ORDER = SharedPreferencesUtils.get(MyApplication.getContext(), "ORDER", testUrl+"/") + "";
 
 //     **/
 
