@@ -211,15 +211,24 @@ public class SocketService extends Service {
                 LogTool.setLog("loginAck---args[0]:", args[0]);
                 try {
                     JSONObject data = new JSONObject(args[0].toString());
-                    if (!data.isNull(Constants.expired_key)) {//被挤下线
-                        //                        Log.e("room","----loginAck expired 被挤下线");
-                        reset();
-                        DBHelper.cloaseInstance();
-                        Intent intent = new Intent(Constants.ACTION_LOGOUT);
-                        intent.putExtra(Constants.expired_key, true);
-                        sendBroadcast(intent);
-                        //                        handler.obtainMessage(0).sendToTarget();
-                        return;
+                    if (!data.isNull(Constants.expired_key)) {
+                        String expiredCode = data.getString(Constants.expired_key);
+                        int code = 0;
+                        try{
+                            code = Integer.parseInt(expiredCode);
+                        } catch (Exception e) {
+                            Log.e("socketService", "parse code exception:" + e.getMessage());
+                        }
+                        // code == 1 表示被踢下线
+                        if (code == 1) {
+                            reset();
+                            DBHelper.cloaseInstance();
+                            Intent intent = new Intent(Constants.ACTION_LOGOUT);
+                            intent.putExtra(Constants.expired_key, true);
+                            sendBroadcast(intent);
+                            return;
+                        }
+
                     }
                     String isNotrouble = data.getString("isNotrouble");
                     Log.i("PING", "isNotrouble=====" + isNotrouble);

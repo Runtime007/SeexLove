@@ -209,10 +209,14 @@ public class MyOkHttpClient {
                 builder.add(entry.getKey(), entry.getValue()+"");
             }
         }
-        builder.add("head",head);
+        if (!TextUtils.isEmpty(head)) {
+            builder.add("head",head);
+        }
         RequestBody body = builder.build();
         Request request = new Request.Builder().url(url).post(body).build();
-        request.header(head);
+        if (!TextUtils.isEmpty(head)) {
+            request.header(head);
+        }
         LogTool.setLog("url",url);
         okHttpClient.newCall(request).enqueue(new StringCallBack(request, httpCallBack));
 }

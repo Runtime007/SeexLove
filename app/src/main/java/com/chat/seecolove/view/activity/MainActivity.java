@@ -159,10 +159,7 @@ public class MainActivity extends SeexBaseActivity implements View.OnClickListen
         }).start();
         getUserMoney();
 
-        int SEX = (int) SharedPreferencesUtils.get(this, Constants.SEX, -1);
-        if(SEX==1){
-            initLBS();
-        }
+        initLBS();
         initpermission();
     }
 
@@ -1357,7 +1354,7 @@ public class MainActivity extends SeexBaseActivity implements View.OnClickListen
                                 myDialog.setCanceledOnTouchOutside(false);
                                 myDialog.setCancelable(false);
                                 myDialog.setView(layout);
-                                myDialog.show();
+//                                myDialog.show();
                                 dialog_sure.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View view) {

@@ -29,7 +29,6 @@ import com.chat.seecolove.view.activity.MyApplication;
 import com.chat.seecolove.view.activity.NotifActivity;
 import com.chat.seecolove.view.activity.SCWebView;
 import com.chat.seecolove.view.activity.ShareWebActivity;
-import com.chat.seecolove.view.activity.UserInfoNewActivity;
 import com.chat.seecolove.view.activity.UserInfoNewActivity123;
 import com.chat.seecolove.view.activity.WithdrawInfoActivity;
 import com.chat.seecolove.widget.CustomRoundAngleTextView;
@@ -247,9 +246,9 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        if (userInfo == null) {
-            return;
-        }
+//        if (userInfo == null) {
+//            return;
+//        }
         Intent intent;
         switch (v.getId()) {
             case R.id.btn_share:
@@ -265,7 +264,7 @@ public class MineFragment extends BaseFragment implements View.OnClickListener {
                 break;
             case R.id.set:
                 intent = new Intent(getActivity(), SettingActivity.class);
-                intent.putExtra("sex", userInfo.getSex());
+                intent.putExtra("sex", 0);
                 startActivityForResult(intent, 0);
                 MobclickAgent.onEvent(getActivity(), "person_center_setting_selected");
                 break;

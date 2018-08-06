@@ -48,7 +48,7 @@ android {
 //    }
     useLibrary 'org.apache.http.legacy'
     defaultConfig {
-        applicationId "com.chat.seecolove"
+        applicationId "com.chat.rabbit.sxlove"
         minSdkVersion 16
         targetSdkVersion 25
         versionCode 38

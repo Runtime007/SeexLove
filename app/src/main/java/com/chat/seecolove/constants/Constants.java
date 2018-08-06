@@ -205,13 +205,13 @@ public class Constants {
     public static String testUrl = "http://47.92.116.238:8725";
 
 //     /** * 正式---公网 **/
-    public String SOCKET = SharedPreferencesUtils.get(MyApplication.getContext(), "SOCKET", "http://36.255.223.213:9092") + "";
-    public String BaseURL = SharedPreferencesUtils.get(MyApplication.getContext(), "BaseURL", "http://api.seecolove.com/") + "";
-    public String URL = SharedPreferencesUtils.get(MyApplication.getContext(), "URL", "http://api.seecolove.com/match/user/") + "";
-    //public String URL = SharedPreferencesUtils.get(MyApplication.getContext(), "URL", "http://23.91.98.54:8725/match/user/") + "";
-    public String MATCHURL = SharedPreferencesUtils.get(MyApplication.getContext(), "MATCHURL", "http://api.seecolove.com/match/") + "";
-    public String NEW_MATCHURL = SharedPreferencesUtils.get(MyApplication.getContext(), "NEW_MATCHURL", "http://api.seecolove.com/mapper/") + "";
-    public String ORDER = SharedPreferencesUtils.get(MyApplication.getContext(), "ORDER", "http://api.seecolove.com/") + "";
+    public String SOCKET = SharedPreferencesUtils.get(MyApplication.getContext(), "SOCKET", "http://rio.reabby.cn:8080/") + "";
+    public String BaseURL = SharedPreferencesUtils.get(MyApplication.getContext(), "BaseURL", "http://chatx.ngrok.xiaomiqiu.cn/") + "";
+//    public String URL = SharedPreferencesUtils.get(MyApplication.getContext(), "URL", "http://api.seecolove.com/match/user/") + "";
+    public String URL = SharedPreferencesUtils.get(MyApplication.getContext(), "URL", "http://match.chatx.ngrok.xiaomiqiu.cn/user/") + "";
+    public String MATCHURL = SharedPreferencesUtils.get(MyApplication.getContext(), "MATCHURL", "http://match.chatx.ngrok.xiaomiqiu.cn/") + "";
+    public String NEW_MATCHURL = SharedPreferencesUtils.get(MyApplication.getContext(), "NEW_MATCHURL", "http://mapper.chatx.ngrok.xiaomiqiu.cn/") + "";
+    public String ORDER = SharedPreferencesUtils.get(MyApplication.getContext(), "ORDER", "http://chatx.ngrok.xiaomiqiu.cn/") + "";
 
 
 //    public String SOCKET = SharedPreferencesUtils.get(MyApplication.getContext(), "SOCKET", "http://106.75.104.68:9092") + "";

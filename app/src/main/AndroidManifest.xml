@@ -128,7 +128,7 @@
            如果 SDKOptions 中提供了，取 SDKOptions 中的值。 -->
         <meta-data
             android:name="com.netease.nim.appKey"
-            android:value="35f10b6324774a3bbda52cdc6cb48f06"/>
+            android:value="8bd1bb45547b59fc072d8bae24cfc66c"/>
 
         <!-- 声明云信后台服务，如需保持后台推送，使用独立进程效果会更好。 -->
         <service
@@ -177,7 +177,7 @@
         <!-- 高德 -->
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="f5cee93ae1f09a48ba729ae16ba96ce6"/>
+            android:value="d54f7540d3f262dbc42cc39bcffb6cf8"/>
         <service android:name="com.amap.api.location.APSService"></service>
         <activity
             android:name=".view.activity.GuideActivity"

@@ -169,9 +169,9 @@ public class SeeCoUserFragment extends BaseFragment implements View.OnClickListe
         Map paramMap = new HashMap();
         String head = jsonUtil.httpHeadToJson(getActivity());
         paramMap.put("head", head);
-        paramMap.put("u_id", (userID == -1 ? IMEI : userID));
-        paramMap.put("page_no", page);
-        paramMap.put("page_size", pageSize);
+        paramMap.put("ownId", (userID == -1 ? IMEI : userID));
+        paramMap.put("pageNo", page);
+        paramMap.put("pageSize", pageSize);
         paramMap.put("menuTypeId",menuTypeId);
         String param = (userID == -1 ? IMEI : userID) + "" + page + pageSize + "" + homeMenu.getParamMap().getSecret();
         Log.i("key", param);

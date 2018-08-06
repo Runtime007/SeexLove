@@ -241,8 +241,8 @@ public class MyApplication extends MultiDexApplication {
 //                ToastUtils.makeTextAnim(instance, "wontAutoLogin 用户登录失败").show();
                 LogTool.setLog("seex:", "用户登录失败");
                 LogTool.setLog("Constants.ACTION_LOGOUT:Appliction", "用户登录失败");
-                Intent intent = new Intent(Constants.ACTION_LOGOUT);
-                sendBroadcast(intent);
+//                Intent intent = new Intent(Constants.ACTION_LOGOUT);
+//                sendBroadcast(intent);
             }
         }
     };
