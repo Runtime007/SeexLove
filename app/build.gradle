@@ -52,7 +52,7 @@ android {
         minSdkVersion 16
         targetSdkVersion 25
         versionCode 38
-        versionName "2.9.5"
+        versionName "2.9.9.2"
         ndk {
             moduleName "jniLibs"
             ldLibs "log", "z", "m"
