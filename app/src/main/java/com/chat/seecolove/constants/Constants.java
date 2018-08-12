@@ -211,7 +211,7 @@ public class Constants {
     public String URL = SharedPreferencesUtils.get(MyApplication.getContext(), "URL", "http://match.chatx.ngrok.xiaomiqiu.cn/user/") + "";
     public String MATCHURL = SharedPreferencesUtils.get(MyApplication.getContext(), "MATCHURL", "http://match.chatx.ngrok.xiaomiqiu.cn/") + "";
     public String NEW_MATCHURL = SharedPreferencesUtils.get(MyApplication.getContext(), "NEW_MATCHURL", "http://mapper.chatx.ngrok.xiaomiqiu.cn/") + "";
-    public String ORDER = SharedPreferencesUtils.get(MyApplication.getContext(), "ORDER", "http://chatx.ngrok.xiaomiqiu.cn/") + "";
+    public String ORDER = SharedPreferencesUtils.get(MyApplication.getContext(), "ORDER", "http://order.chatx.ngrok.xiaomiqiu.cn/") + "";
 
 
 //    public String SOCKET = SharedPreferencesUtils.get(MyApplication.getContext(), "SOCKET", "http://106.75.104.68:9092") + "";
@@ -413,7 +413,7 @@ public class Constants {
      * <p>
      * *
      */
-    public String create = ORDER + "order/video/create";
+    public String create = ORDER + "video/create";
 
     public String createVoice = ORDER + "order/voice/create";
     /**
